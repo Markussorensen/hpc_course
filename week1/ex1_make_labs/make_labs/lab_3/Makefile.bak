@@ -1,0 +1,61 @@
+CC = gcc
+OPT = -g -O3
+WARN = -Wall
+CFLAGS = $(OPT) $(WARN)
+OBJECTS = data.o main.o io.o
+
+excer1: $(OBJECTS)
+	$(CC) $(CFLAGS) -o excer1 $(OBJECTS)
+
+clean:
+	rm -f *.o core
+
+realclean: clean
+	rm -f excer1
+
+# DO NOT DELETE
+
+data.o: /usr/include/stdio.h /usr/include/bits/libc-header-start.h
+data.o: /usr/include/features.h /usr/include/stdc-predef.h
+data.o: /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h
+data.o: /usr/include/bits/long-double.h /usr/include/gnu/stubs.h
+data.o: /usr/include/bits/types.h /usr/include/bits/typesizes.h
+data.o: /usr/include/bits/types/__FILE.h /usr/include/bits/types/FILE.h
+data.o: /usr/include/bits/libio.h /usr/include/bits/_G_config.h
+data.o: /usr/include/bits/types/__mbstate_t.h /usr/include/bits/stdio_lim.h
+data.o: /usr/include/bits/sys_errlist.h data.h
+io.o: /usr/include/stdio.h /usr/include/bits/libc-header-start.h
+io.o: /usr/include/features.h /usr/include/stdc-predef.h
+io.o: /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h
+io.o: /usr/include/bits/long-double.h /usr/include/gnu/stubs.h
+io.o: /usr/include/bits/types.h /usr/include/bits/typesizes.h
+io.o: /usr/include/bits/types/__FILE.h /usr/include/bits/types/FILE.h
+io.o: /usr/include/bits/libio.h /usr/include/bits/_G_config.h
+io.o: /usr/include/bits/types/__mbstate_t.h /usr/include/bits/stdio_lim.h
+io.o: /usr/include/bits/sys_errlist.h io.h
+main.o: /usr/include/stdio.h /usr/include/bits/libc-header-start.h
+main.o: /usr/include/features.h /usr/include/stdc-predef.h
+main.o: /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h
+main.o: /usr/include/bits/long-double.h /usr/include/gnu/stubs.h
+main.o: /usr/include/bits/types.h /usr/include/bits/typesizes.h
+main.o: /usr/include/bits/types/__FILE.h /usr/include/bits/types/FILE.h
+main.o: /usr/include/bits/libio.h /usr/include/bits/_G_config.h
+main.o: /usr/include/bits/types/__mbstate_t.h /usr/include/bits/stdio_lim.h
+main.o: /usr/include/bits/sys_errlist.h /usr/include/stdlib.h
+main.o: /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h
+main.o: /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h
+main.o: /usr/include/sys/types.h /usr/include/bits/types/clock_t.h
+main.o: /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h
+main.o: /usr/include/bits/types/timer_t.h /usr/include/bits/stdint-intn.h
+main.o: /usr/include/endian.h /usr/include/bits/endian.h
+main.o: /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h
+main.o: /usr/include/bits/uintn-identity.h /usr/include/sys/select.h
+main.o: /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h
+main.o: /usr/include/bits/types/__sigset_t.h
+main.o: /usr/include/bits/types/struct_timeval.h
+main.o: /usr/include/bits/types/struct_timespec.h
+main.o: /usr/include/sys/sysmacros.h /usr/include/bits/sysmacros.h
+main.o: /usr/include/bits/pthreadtypes.h
+main.o: /usr/include/bits/thread-shared-types.h
+main.o: /usr/include/bits/pthreadtypes-arch.h /usr/include/alloca.h
+main.o: /usr/include/bits/stdlib-float.h io.h data.h

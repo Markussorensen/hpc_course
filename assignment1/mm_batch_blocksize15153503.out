@@ -1,0 +1,176 @@
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                24
+On-line CPU(s) list:   0-23
+Thread(s) per core:    1
+Core(s) per socket:    12
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 79
+Model name:            Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+Stepping:              1
+CPU MHz:               2200.000
+CPU max MHz:           2900.0000
+CPU min MHz:           1200.0000
+BogoMIPS:              4389.91
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              30720K
+NUMA node0 CPU(s):     0-11
+NUMA node1 CPU(s):     12-23
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd rsb_ctxsw ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap intel_pt xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts md_clear spec_ctrl intel_stibp flush_l1d
+ 
+Testing matmult_c.gcc
+  5859.375   1803.491 # matmult_blk 10
+  5859.375   2842.094 # matmult_blk 20
+  5859.375   3148.193 # matmult_blk 30
+  5859.375   3614.743 # matmult_blk 40
+  5859.375   3849.588 # matmult_blk 50
+  5859.375   3567.592 # matmult_blk 60
+  5859.375   3489.540 # matmult_blk 70
+  5859.375   3509.412 # matmult_blk 80
+  5859.375   3663.744 # matmult_blk 90
+  5859.375   3708.316 # matmult_blk 100
+  5859.375   3593.157 # matmult_blk 110
+  5859.375   3467.270 # matmult_blk 120
+  5859.375   3473.189 # matmult_blk 130
+  5859.375   3343.296 # matmult_blk 140
+  5859.375   3274.495 # matmult_blk 150
+  5859.375   3187.468 # matmult_blk 160
+  5859.375   3211.071 # matmult_blk 170
+  5859.375   3276.203 # matmult_blk 180
+  5859.375   3261.869 # matmult_blk 190
+  5859.375   3317.968 # matmult_blk 200
+ 23437.500   1807.691 # matmult_blk 10
+ 23437.500   2736.165 # matmult_blk 20
+ 23437.500   3088.425 # matmult_blk 30
+ 23437.500   3600.186 # matmult_blk 40
+ 23437.500   3867.734 # matmult_blk 50
+ 23437.500   3534.455 # matmult_blk 60
+ 23437.500   3486.477 # matmult_blk 70
+ 23437.500   3593.547 # matmult_blk 80
+ 23437.500   3647.041 # matmult_blk 90
+ 23437.500   3875.262 # matmult_blk 100
+ 23437.500   3768.980 # matmult_blk 110
+ 23437.500   3816.068 # matmult_blk 120
+ 23437.500   3755.416 # matmult_blk 130
+ 23437.500   3604.356 # matmult_blk 140
+ 23437.500   3397.921 # matmult_blk 150
+ 23437.500   3246.233 # matmult_blk 160
+ 23437.500   3300.224 # matmult_blk 170
+ 23437.500   3478.145 # matmult_blk 180
+ 23437.500   3458.291 # matmult_blk 190
+ 23437.500   3473.765 # matmult_blk 200
+ 93750.000   1783.398 # matmult_blk 10
+ 93750.000   2535.794 # matmult_blk 20
+ 93750.000   3072.739 # matmult_blk 30
+ 93750.000   3591.985 # matmult_blk 40
+ 93750.000   3969.584 # matmult_blk 50
+ 93750.000   3520.047 # matmult_blk 60
+ 93750.000   3521.407 # matmult_blk 70
+ 93750.000   3605.172 # matmult_blk 80
+ 93750.000   3741.021 # matmult_blk 90
+ 93750.000   3890.834 # matmult_blk 100
+ 93750.000   3789.451 # matmult_blk 110
+ 93750.000   3831.141 # matmult_blk 120
+ 93750.000   3914.772 # matmult_blk 130
+ 93750.000   3631.306 # matmult_blk 140
+ 93750.000   3374.218 # matmult_blk 150
+ 93750.000   3320.355 # matmult_blk 160
+ 93750.000   3393.189 # matmult_blk 170
+ 93750.000   3430.778 # matmult_blk 180
+ 93750.000   3468.710 # matmult_blk 190
+ 93750.000   3494.919 # matmult_blk 200
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15153503: <mm_batch_blocksize> in cluster <dcc> Done
+
+Job <mm_batch_blocksize> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Thu Jan  5 14:47:39 2023
+Job was executed on host(s) <n-62-21-75>, in queue <hpcintro>, as user <s183997> in cluster <dcc> at Thu Jan  5 14:47:40 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment1> was used as the working directory.
+Started at Thu Jan  5 14:47:40 2023
+Terminated at Thu Jan  5 14:51:26 2023
+Results reported at Thu Jan  5 14:51:26 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J mm_batch_blocksize
+#BSUB -o mm_batch_blocksize%J.out
+#BSUB -q hpcintro
+#BSUB -n 1
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 15
+# uncomment the following line, if you want to assure that your job has
+# a whole CPU for itself (shared L3 cache)
+# #BSUB -R "span[hosts=1] affinity[socket(1)]"
+
+# define the driver name to use
+# valid values: matmult_c.studio, matmult_f.studio, matmult_c.gcc or
+# matmult_f.gcc
+#
+EXECUTABLE=matmult_c.gcc
+
+# define the mkn values in the MKN variable
+#
+PERMS="mnk mkn kmn knm nmk nkm lib"
+SIZES="500 1000 2000"
+BLK_SIZES="10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200"
+
+# define the permutation type in PERM
+#
+# PERM="mkn"
+
+# uncomment and set a reasonable BLKSIZE for the blk version
+#
+# BLKSIZE=1
+
+# enable(1)/disable(0) result checking
+export MATMULT_COMPARE=0
+
+# start the collect command with the above settings
+lscpu
+
+echo " "
+echo "Testing $EXECUTABLE"
+
+for S in $SIZES
+do 
+    for B in $BLK_SIZES
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   224.93 sec.
+    Max Memory :                                 96 MB
+    Average Memory :                             74.50 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               1952.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   267 sec.
+    Turnaround time :                            227 sec.
+
+The output (if any) is above this job summary.
+

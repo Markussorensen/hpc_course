@@ -1,6 +1,33 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+with open('assignment1/all_methods_nocompiler.txt') as f:
+    methods = []
+    memorysizes = []
+    performance = []
+    for line in f:
+        linesplit = line.split()
+        memorysizes.append(float(linesplit[0]))
+        performance.append(float(linesplit[1]))
+        methods.append(" ".join(linesplit[3:]))
+
+methods = np.array(methods)
+memorysizes = np.array(memorysizes)
+performance = np.array(performance)
+matrix_sizes = np.array([50, 100, 200, 500, 1000, 2000])
+
+plt.figure()
+for method in np.unique(methods):
+    if not "blk" in method:
+        if not "lib" in method:
+            plt.plot(matrix_sizes, performance[methods == method], label=method)
+plt.xlabel('Matrix Size')
+plt.ylabel('Performance (MFLOPS)')
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
+plt.title('Performance of permutations without optimal compiler options')
+plt.tight_layout()
+plt.savefig('assignment1/performance_basic_wocompiler.png')
+
 with open('assignment1/all_methods.txt') as f:
     methods = []
     memorysizes = []
@@ -23,8 +50,9 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
+plt.title('Performance of permutations with optimal compiler options')
 plt.tight_layout()
-plt.savefig('assignment1/performance_basic.png')
+plt.savefig('assignment1/performance_basic_wcompiler.png')
 
 plt.figure()
 for method in np.unique(methods):
@@ -32,6 +60,7 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
+plt.title('Performance of all methods')
 plt.tight_layout()
 plt.savefig('assignment1/performance_all.png')
 
@@ -49,7 +78,7 @@ blocksize = np.array(blocksize)
 memorysizes = np.array(memorysizes)
 performance = np.array(performance)
 
-mem = ["Dim=100", "Dim=200", "Dim=500"]
+mem = ["Size=5859.4", "Size=23437.5", "Size=93750.0"]
 
 i = 0
 plt.figure()
@@ -59,5 +88,6 @@ for ms in np.unique(memorysizes):
 plt.xlabel('Block size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend()
+plt.title('Performance of blocksize')
 plt.savefig('assignment1/blocksize.png')
 

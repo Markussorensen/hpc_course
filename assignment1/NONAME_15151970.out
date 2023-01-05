@@ -1,0 +1,38 @@
+/bin/bash: ./mm_batch.sub: Permission denied
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15151970: <NONAME> in cluster <dcc> Exited
+
+Job <NONAME> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Thu Jan  5 10:17:05 2023
+Job was executed on host(s) <n-62-31-21>, in queue <hpc>, as user <s183997> in cluster <dcc> at Thu Jan  5 10:17:06 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment1> was used as the working directory.
+Started at Thu Jan  5 10:17:06 2023
+Terminated at Thu Jan  5 10:17:08 2023
+Results reported at Thu Jan  5 10:17:08 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./mm_batch.sub
+------------------------------------------------------------
+
+Exited with exit code 126.
+
+Resource usage summary:
+
+    CPU time :                                   0.98 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   2 sec.
+    Turnaround time :                            3 sec.
+
+The output (if any) is above this job summary.
+

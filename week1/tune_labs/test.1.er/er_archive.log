@@ -1,0 +1,10 @@
+### Start Tue Jan  3 15:11:03 2023
+# /opt/oracle/developerstudio12.6/bin/../bin/er_archive -n -O /zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/er_archive.log /zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er
+Copying `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/aos.gcc'  to `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/archives/aos.gcc_AieklUoOJA2'
+Copying `/usr/lib64/librt-2.17.so'  to `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/archives/librt-2.17.so_OCEC1bthLm2'
+Copying `/usr/lib64/libpthread-2.17.so'  to `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/archives/libpthread-2.17.so_OCEC1bthLm2'
+Copying `/usr/lib64/libdl-2.17.so'  to `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/archives/libdl-2.17.so_OCEC1bthLm2'
+Copying `/usr/lib64/libc-2.17.so'  to `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/archives/libc-2.17.so_OCEC1bthLm2'
+Copying `/usr/lib64/libm-2.17.so'  to `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/archives/libm-2.17.so_OCEC1bthLm2'
+Copying `/opt/oracle/developerstudio12.6/lib/analyzer/amd64/runtime/libcollector.so'  to `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/archives/libcollector.so_-C8vWEvanQd'
+Copying `/usr/lib64/ld-2.17.so'  to `/zhome/69/1/137385/Desktop/hpc_course/week1/tune_labs/test.1.er/archives/ld-2.17.so_OCEC1bthLm2'

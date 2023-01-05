@@ -24,8 +24,9 @@ EXECUTABLE=matmult_c.gcc
 
 # define the mkn values in the MKN variable
 #
-PERMS="mnk mkn kmn knm nmk nkm"
+PERMS="mnk mkn kmn knm nmk nkm lib"
 SIZES="100 200 500"
+BLK_SIZES="5 10 20 50 100"
 
 # define the permutation type in PERM
 #
@@ -44,6 +45,10 @@ do
     for P in $PERMS
     do
         ./$EXECUTABLE $P $S $S $S
+    done
+    for B in $BLK_SIZES
+    do
+        ./$EXECUTABLE blk $S $S $S $B
     done
 done
 

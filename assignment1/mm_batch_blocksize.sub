@@ -6,8 +6,8 @@
 #
 # Author: Bernd Dammann <bd@cc.dtu.dk>
 #
-#BSUB -J mm_batch_perm
-#BSUB -o mm_batch_perm%J.out
+#BSUB -J mm_batch_blocksize
+#BSUB -o mm_batch_blocksize%J.out
 #BSUB -q hpcintro
 #BSUB -n 1
 #BSUB -R "rusage[mem=2048]"
@@ -25,8 +25,8 @@ EXECUTABLE=matmult_c.gcc
 # define the mkn values in the MKN variable
 #
 PERMS="mnk mkn kmn knm nmk nkm lib"
-SIZES="50 100 200 500 1000 2000"
-# BLK_SIZES="10 20 30 40 50 60 70 80 90 100"
+SIZES="100 200 500"
+BLK_SIZES="10 20 30 40 50 60 70 80 90 100"
 
 # define the permutation type in PERM
 #
@@ -34,7 +34,7 @@ SIZES="50 100 200 500 1000 2000"
 
 # uncomment and set a reasonable BLKSIZE for the blk version
 #
-BLKSIZE=50
+# BLKSIZE=1
 
 # enable(1)/disable(0) result checking
 export MATMULT_COMPARE=0
@@ -47,11 +47,10 @@ echo "Testing $EXECUTABLE"
 
 for S in $SIZES
 do 
-    for P in $PERMS
+    for B in $BLK_SIZES
     do
-        ./$EXECUTABLE $P $S $S $S
+        ./$EXECUTABLE blk $S $S $S $B
     done
-    ./$EXECUTABLE blk $S $S $S $BLKSIZE
 done
 
 # for P in $PERMS

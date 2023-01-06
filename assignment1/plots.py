@@ -67,7 +67,7 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
-plt.title('Performance with -O3 compiler flag')
+plt.title('Performance w. -O3')
 plt.tight_layout()
 plt.savefig('assignment1/performance_basic_O3.png')
 
@@ -94,7 +94,7 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
-plt.title('Performance with -O3 -funroll-loops compiler flags')
+plt.title('Performance w. -O3 -funroll-loops')
 plt.tight_layout()
 plt.savefig('assignment1/performance_basic_O3_funroll.png')
 
@@ -121,7 +121,7 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
-plt.title('Performance with -O3 -funroll-loops -flto compiler flags')
+plt.title('Performance w. -O3 -funroll-loops -flto')
 plt.tight_layout()
 plt.savefig('assignment1/performance_basic_O3_funroll_flto.png')
 
@@ -148,7 +148,7 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
-plt.title('Performance with -O3 -funroll-loops -march=native compiler flags')
+plt.title('Performance w. -O3 -funroll-loops -march=native')
 plt.tight_layout()
 plt.savefig('assignment1/performance_basic_O3_funroll_marchnative.png')
 
@@ -175,7 +175,7 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
-plt.title('Performance with -O3 -funroll-loops -march=native compiler flags')
+plt.title('Performance w. -O3 -funroll-loops -march=native -mfpmath=sse')
 plt.tight_layout()
 plt.savefig('assignment1/performance_basic_O3_funroll_marchnative_sse.png')
 
@@ -201,7 +201,7 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
-plt.title('Performance with -O3 -funroll -flto compiler flags')
+plt.title('Performance all methods')
 plt.tight_layout()
 plt.savefig('assignment1/performance_basic_wcompiler.png')
 

@@ -222,7 +222,7 @@ for method in np.unique(methods):
 plt.xlabel('Matrix Size')
 plt.ylabel('Performance (MFLOPS)')
 plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
-plt.title('Performance of all methods')
+plt.title('Performance of blk vs lib vs mkn')
 plt.tight_layout()
 plt.savefig('assignment1/performance_blk.png')
 

@@ -3,7 +3,7 @@ LIBSRCS	=
 LIBOBJS	= matmul_c.o
 
 #-O3 -funroll-loops -flto -march=native -mfpmath=sse
-OPT	= -g 
+OPT	= -g -O3 -funroll-loops -march=native -mfpmath=sse
 PIC	= -fPIC
 
 CC	= gcc

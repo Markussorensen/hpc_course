@@ -1,0 +1,48 @@
+    58.594   1154.267 # matmult_mnk
+    58.594   5485.578 # matmult_mkn
+    58.594   4599.460 # matmult_kmn
+    58.594   1549.179 # matmult_knm
+    58.594   1171.627 # matmult_nmk
+    58.594   1567.587 # matmult_nkm
+    58.594   6245.217 # matmult_lib
+    58.594   5200.587 # matmult_blk 50
+   234.375   1050.948 # matmult_mnk
+   234.375   7108.302 # matmult_mkn
+   234.375   5242.223 # matmult_kmn
+   234.375   1502.014 # matmult_knm
+   234.375   1039.980 # matmult_nmk
+   234.375   1496.213 # matmult_nkm
+   234.375   6950.440 # matmult_lib
+   234.375   5642.373 # matmult_blk 50
+   937.500    921.526 # matmult_mnk
+   937.500   6554.671 # matmult_mkn
+   937.500   4242.747 # matmult_kmn
+   937.500    988.667 # matmult_knm
+   937.500    911.613 # matmult_nmk
+   937.500   1004.360 # matmult_nkm
+   937.500   8220.117 # matmult_lib
+   937.500   5606.585 # matmult_blk 50
+  5859.375    882.504 # matmult_mnk
+  5859.375   6492.164 # matmult_mkn
+  5859.375   3998.907 # matmult_kmn
+  5859.375    497.188 # matmult_knm
+  5859.375    875.514 # matmult_nmk
+  5859.375    501.240 # matmult_nkm
+  5859.375   8361.866 # matmult_lib
+  5859.375   5371.010 # matmult_blk 50
+ 23437.500    852.027 # matmult_mnk
+ 23437.500   6491.791 # matmult_mkn
+ 23437.500   4055.191 # matmult_kmn
+ 23437.500    496.763 # matmult_knm
+ 23437.500    875.652 # matmult_nmk
+ 23437.500    502.883 # matmult_nkm
+ 23437.500   8491.038 # matmult_lib
+ 23437.500   5585.150 # matmult_blk 50
+ 93750.000    647.238 # matmult_mnk
+ 93750.000   4827.954 # matmult_mkn
+ 93750.000   2723.009 # matmult_kmn
+ 93750.000    321.789 # matmult_knm
+ 93750.000    615.324 # matmult_nmk
+ 93750.000    321.694 # matmult_nkm
+ 93750.000   8496.948 # matmult_lib
+ 93750.000   5414.323 # matmult_blk 50

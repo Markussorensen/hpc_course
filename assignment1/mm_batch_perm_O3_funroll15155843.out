@@ -1,0 +1,164 @@
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                24
+On-line CPU(s) list:   0-23
+Thread(s) per core:    1
+Core(s) per socket:    12
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 79
+Model name:            Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+Stepping:              1
+CPU MHz:               2200.000
+CPU max MHz:           2900.0000
+CPU min MHz:           1200.0000
+BogoMIPS:              4389.48
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              30720K
+NUMA node0 CPU(s):     0-11
+NUMA node1 CPU(s):     12-23
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd rsb_ctxsw ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap intel_pt xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts md_clear spec_ctrl intel_stibp flush_l1d
+ 
+Testing matmult_c.gcc
+    58.594   1584.094 # matmult_mnk
+    58.594   4182.676 # matmult_mkn
+    58.594   3558.829 # matmult_kmn
+    58.594   1517.089 # matmult_knm
+    58.594   1593.789 # matmult_nmk
+    58.594   1590.506 # matmult_nkm
+    58.594   6240.371 # matmult_lib
+    58.594   4066.333 # matmult_blk 50
+   234.375   1582.100 # matmult_mnk
+   234.375   4088.882 # matmult_mkn
+   234.375   3845.558 # matmult_kmn
+   234.375   1440.197 # matmult_knm
+   234.375   1578.793 # matmult_nmk
+   234.375   1467.768 # matmult_nkm
+   234.375   6952.565 # matmult_lib
+   234.375   4097.305 # matmult_blk 50
+   937.500   1315.296 # matmult_mnk
+   937.500   4002.352 # matmult_mkn
+   937.500   3471.685 # matmult_kmn
+   937.500    980.748 # matmult_knm
+   937.500   1378.113 # matmult_nmk
+   937.500   1012.371 # matmult_nkm
+   937.500   8216.508 # matmult_lib
+   937.500   4080.638 # matmult_blk 50
+  5859.375   1136.448 # matmult_mnk
+  5859.375   4185.295 # matmult_mkn
+  5859.375   3588.283 # matmult_kmn
+  5859.375    497.891 # matmult_knm
+  5859.375   1200.227 # matmult_nmk
+  5859.375    502.527 # matmult_nkm
+  5859.375   8354.631 # matmult_lib
+  5859.375   3887.019 # matmult_blk 50
+ 23437.500   1133.049 # matmult_mnk
+ 23437.500   4203.701 # matmult_mkn
+ 23437.500   3660.162 # matmult_kmn
+ 23437.500    497.228 # matmult_knm
+ 23437.500   1223.602 # matmult_nmk
+ 23437.500    502.428 # matmult_nkm
+ 23437.500   8483.879 # matmult_lib
+ 23437.500   3942.716 # matmult_blk 50
+ 93750.000    641.865 # matmult_mnk
+ 93750.000   3406.075 # matmult_mkn
+ 93750.000   2575.488 # matmult_kmn
+ 93750.000    321.450 # matmult_knm
+ 93750.000    594.717 # matmult_nmk
+ 93750.000    323.033 # matmult_nkm
+ 93750.000   8486.434 # matmult_lib
+ 93750.000   3965.911 # matmult_blk 50
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15155843: <mm_batch_perm> in cluster <dcc> Done
+
+Job <mm_batch_perm> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Fri Jan  6 10:16:43 2023
+Job was executed on host(s) <n-62-21-77>, in queue <hpcintro>, as user <s183997> in cluster <dcc> at Fri Jan  6 10:16:44 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment1> was used as the working directory.
+Started at Fri Jan  6 10:16:44 2023
+Terminated at Fri Jan  6 10:21:41 2023
+Results reported at Fri Jan  6 10:21:41 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J mm_batch_perm
+#BSUB -o mm_batch_perm_O3_funroll%J.out
+#BSUB -q hpcintro
+#BSUB -n 1
+#BSUB -R "rusage[mem=2048]"
+#BSUB -W 15
+# uncomment the following line, if you want to assure that your job has
+# a whole CPU for itself (shared L3 cache)
+# #BSUB -R "span[hosts=1] affinity[socket(1)]"
+
+# define the driver name to use
+# valid values: matmult_c.studio, matmult_f.studio, matmult_c.gcc or
+# matmult_f.gcc
+#
+EXECUTABLE=matmult_c.gcc
+
+# define the mkn values in the MKN variable
+#
+PERMS="mnk mkn kmn knm nmk nkm lib"
+SIZES="50 100 200 500 1000 2000"
+# BLK_SIZES="10 20 30 40 50 60 70 80 90 100"
+
+# define the permutation type in PERM
+#
+# PERM="mkn"
+
+# uncomment and set a reasonable BLKSIZE for the blk version
+#
+BLKSIZE=50
+
+# enable(1)/disable(0) result checking
+export MATMULT_COMPARE=0
+
+# start the collect command with the above settings
+lscpu
+
+echo " "
+echo "Testing $EXECUTABLE"
+
+for S in $SIZES
+do 
+    for P in $PERMS
+
+(... more ...)
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   295.95 sec.
+    Max Memory :                                 96 MB
+    Average Memory :                             73.00 MB
+    Total Requested Memory :                     2048.00 MB
+    Delta Memory :                               1952.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   297 sec.
+    Turnaround time :                            298 sec.
+
+The output (if any) is above this job summary.
+

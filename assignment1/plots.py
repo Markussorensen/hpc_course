@@ -9,7 +9,7 @@ with open('assignment1/all_methods_nocompiler.txt') as f:
         linesplit = line.split()
         memorysizes.append(float(linesplit[0]))
         performance.append(float(linesplit[1]))
-        methods.append(" ".join(linesplit[3:]))
+        methods.append(" ".join(linesplit[3:]).split("matmult_")[1])
 
 methods = np.array(methods)
 memorysizes = np.array(memorysizes)
@@ -52,7 +52,7 @@ with open('assignment1/all_methods_O3.txt') as f:
         linesplit = line.split()
         memorysizes.append(float(linesplit[0]))
         performance.append(float(linesplit[1]))
-        methods.append(" ".join(linesplit[3:]))
+        methods.append(" ".join(linesplit[3:]).split("matmult_")[1])
 
 methods = np.array(methods)
 memorysizes = np.array(memorysizes)
@@ -79,7 +79,7 @@ with open('assignment1/all_methods_O3_funroll.txt') as f:
         linesplit = line.split()
         memorysizes.append(float(linesplit[0]))
         performance.append(float(linesplit[1]))
-        methods.append(" ".join(linesplit[3:]))
+        methods.append(" ".join(linesplit[3:]).split("matmult_")[1])
 
 methods = np.array(methods)
 memorysizes = np.array(memorysizes)
@@ -106,7 +106,7 @@ with open('assignment1/all_methods_O3_funroll_flto.txt') as f:
         linesplit = line.split()
         memorysizes.append(float(linesplit[0]))
         performance.append(float(linesplit[1]))
-        methods.append(" ".join(linesplit[3:]))
+        methods.append(" ".join(linesplit[3:]).split("matmult_")[1])
 
 methods = np.array(methods)
 memorysizes = np.array(memorysizes)
@@ -133,7 +133,7 @@ with open('assignment1/all_methods_O3_funroll_marchnative.txt') as f:
         linesplit = line.split()
         memorysizes.append(float(linesplit[0]))
         performance.append(float(linesplit[1]))
-        methods.append(" ".join(linesplit[3:]))
+        methods.append(" ".join(linesplit[3:]).split("matmult_")[1])
 
 methods = np.array(methods)
 memorysizes = np.array(memorysizes)
@@ -160,7 +160,7 @@ with open('assignment1/all_methods_O3_funroll_marchnative_sse.txt') as f:
         linesplit = line.split()
         memorysizes.append(float(linesplit[0]))
         performance.append(float(linesplit[1]))
-        methods.append(" ".join(linesplit[3:]))
+        methods.append(" ".join(linesplit[3:]).split("matmult_")[1])
 
 methods = np.array(methods)
 memorysizes = np.array(memorysizes)
@@ -187,12 +187,12 @@ with open('assignment1/all_methods.txt') as f:
         linesplit = line.split()
         memorysizes.append(float(linesplit[0]))
         performance.append(float(linesplit[1]))
-        methods.append(" ".join(linesplit[3:]))
+        methods.append(" ".join(linesplit[3:]).split("matmult_")[1])
 
 methods = np.array(methods)
 memorysizes = np.array(memorysizes)
 performance = np.array(performance)
-matrix_sizes = np.array([50, 100, 200, 500, 1000, 2000])
+matrix_sizes = np.array([50, 100, 200, 500, 1000, 2000, 2500])
 
 plt.figure()
 for method in np.unique(methods):
@@ -214,6 +214,17 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
 plt.title('Performance of all methods')
 plt.tight_layout()
 plt.savefig('assignment1/performance_all.png')
+
+plt.figure()
+for method in np.unique(methods):
+    if method in ["lib", "blk 50", "mkn"]:
+        plt.plot(matrix_sizes, performance[methods == method], label=method)
+plt.xlabel('Matrix Size')
+plt.ylabel('Performance (MFLOPS)')
+plt.legend(bbox_to_anchor=(1.05, 1), loc=2)
+plt.title('Performance of all methods')
+plt.tight_layout()
+plt.savefig('assignment1/performance_blk.png')
 
 with open("assignment1/blocksize.txt") as f:
     blocksize = []

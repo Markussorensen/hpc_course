@@ -71,3 +71,17 @@ Testing matmult_c.gcc
  93750.000   2771.753 # matmult_kmn
  93750.000    320.652 # matmult_knm
  93750.000    618.152 # matmult_nmk
+ 93750.000    320.982 # matmult_nkm
+ 93750.000   8486.517 # matmult_lib
+ 93750.000   5406.036 # matmult_blk 50
+146484.375    659.188 # matmult_mnk
+146484.375   2608.673 # matmult_mkn
+146484.375   1899.706 # matmult_kmn
+146484.375    270.253 # matmult_knm
+146484.375    574.907 # matmult_nmk
+146484.375    271.212 # matmult_nkm
+146484.375   8488.625 # matmult_lib
+146484.375   5308.176 # matmult_blk 50
+210937.500    567.510 # matmult_mnk
+210937.500   2384.345 # matmult_mkn
+210937.500   1874.785 # matmult_kmn

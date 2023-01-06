@@ -33,7 +33,7 @@ for method in np.unique(methods):
     if not "blk" in method:
         if not "lib" in method:
             plt.plot(np.log2(memorysizes[methods == method]), performance[methods == method], label=method)
-plt.xlabel('Matrix Size')
+plt.xlabel('Memory usage (KB)')
 plt.ylabel('Performance (MFLOPS)')
 plt.xticks(np.log2(memorysizes[methods == method]), memorysizes[methods == method])
 #make 3 vertical lines with labels for cache sizes

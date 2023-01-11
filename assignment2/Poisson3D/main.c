@@ -29,8 +29,10 @@ main(int argc, char *argv[]) {
     double	start_T = START_T_DEFAULT;
     int		output_type = 0;
     char	*output_prefix = "poisson_res";
+    char	*output_f = "poisson_res_f";
     char        *output_ext    = "";
     char	output_filename[FILENAME_MAX];
+    char    output_filename_f[FILENAME_MAX];
     double 	***u = NULL, ***u_new = NULL, ***f = NULL;
 
 
@@ -64,6 +66,12 @@ main(int argc, char *argv[]) {
     }
     jacobi(u, u_new, f, N, iter_max, tolerance);
     free_3d(u_new);
+    output_prefix = "poisson_res_j";
+    #endif
+
+    #ifdef _GAUSS_SEIDEL
+    gauss_seidel(u, f, N, iter_max, tolerance);
+    output_prefix = "poisson_res_gs";
     #endif
 
     // dump  results if wanted 
@@ -82,6 +90,10 @@ main(int argc, char *argv[]) {
 	    sprintf(output_filename, "%s_%d%s", output_prefix, N, output_ext);
 	    fprintf(stderr, "Write VTK file to %s: ", output_filename);
 	    print_vtk(output_filename, N, u);
+
+	    sprintf(output_filename_f, "%s_%d%s", output_f, N, output_ext);
+	    fprintf(stderr, "Write VTK file to %s: ", output_filename_f);
+	    print_vtk(output_filename_f, N, f);
 	    break;
 	default:
 	    fprintf(stderr, "Non-supported output type!\n");

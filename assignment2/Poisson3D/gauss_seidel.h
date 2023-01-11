@@ -6,5 +6,6 @@
 
 // define your function prototype here
 // gauss_seidel(...);
+void gauss_seidel(double ***U, double ***F, int N, int iter_max, double tolerance);
 
 #endif

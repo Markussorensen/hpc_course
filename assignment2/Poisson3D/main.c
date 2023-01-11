@@ -52,6 +52,27 @@ main(int argc, char *argv[]) {
      *
      */
 
+    // initialize u
+    for (int i = 1; i < N; i++) {
+        for (int j = 1; j < N; j++) {
+            for (int k = 1; k < N; k++) {
+                u[i][j][k] = start_T;
+            }
+        }
+    }
+
+    for (int i = 0; i < N+2; i++) {         
+        for (int j = 0; j < N+2; j++) {
+            u[i][N+1][j] = 20; // u(x, 1, z) = 20
+            u[i][0][j] = 0; // u(x, -1, z) = 0
+            u[N+1][i][j] = 20; // u(1, y, z) = 20
+            u[0][i][j] = 20; // u(−1, y, z) = 20
+            u[i][j][N+1] = 20; // u(x, y, 1) = 20
+            u[i][j][0] = 20;// u(x, y, −1)
+        }
+    }
+
+
     // dump  results if wanted 
     switch(output_type) {
 	case 0:

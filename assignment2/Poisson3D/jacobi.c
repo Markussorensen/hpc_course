@@ -4,7 +4,7 @@
 #include <math.h>
 
 void
-jacobi(double ***U, double ***F, double ***U_new, int N, int iter_max, double tolerance, double *mse_vector) {
+jacobi(double ***U, double ***F, double ***U_new, int N, int iter_max, double tolerance) {
     double delta = 2.0 / (N + 1);
     double se, mse;
     for (int iter = 0; iter < iter_max; iter++) {
@@ -28,6 +28,5 @@ jacobi(double ***U, double ***F, double ***U_new, int N, int iter_max, double to
                 }
             }
         }
-        mse_vector[iter] = mse;
     }
 }

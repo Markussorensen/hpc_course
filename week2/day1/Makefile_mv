@@ -1,0 +1,37 @@
+CC	= gcc
+OPT	= -g 
+CHIP	= 
+ISA	= 
+DEFS	= 
+LIBS	= -lm
+CFLAGS  = $(OPT) $(CHIP) $(ISA) $(DEFS) $(XOPT)
+
+SOURCES = xtime.c
+OBJECTS = $(SOURCES:.c=.o)
+
+TARGET_PAR = mv_par.$(CC)
+TARGET_UNPAR = mv_unpar.$(CC)
+TARGETS = $(TARGET_PAR) $(TARGET_UNPAR)
+
+all: 
+	$(MAKE) $(MAKEFLAGS) clean
+	$(MAKE) $(MAKEFLAGS) $(TARGET_PAR)
+	$(MAKE) $(MAKEFLAGS) clean
+	$(MAKE) $(MAKEFLAGS) $(TARGET_UNPAR)
+
+$(TARGET_PAR): clean $(OBJECTS)
+	$(CC) -o $@ $(CFLAGS) $(OBJECTS) mv_par.o $(LIBS)
+
+$(TARGET_UNPAR): clean $(OBJECTS)
+	$(CC) -o $@ $(CFLAGS) $(OBJECTS) mv_unpar.o $(LIBS)
+
+clean:
+	@/bin/rm -f $(OBJECTS) core
+
+realclean: clean
+	@/bin/rm -f $(TARGETS)
+
+
+# DO NOT DELETE
+mv_par.o: xtime.h
+mv_unpar.o: xtime.h

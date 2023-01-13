@@ -6,6 +6,9 @@
 #ifndef _JACOBI_H
 #define _JACOBI_H
 
-int jacobi(double ***, double ***, double ***, int, int, double);
+void jacobi(double ***, double ***, double ***, int, int, double);
+void jacobi_omp_simpel(double ***U, double ***F, double ***U_new, int N, int iter_max, double tolerance);
+void jacobi_omp1(double ***U, double ***F, double ***U_new, int N, int iter_max, double tolerance);
+void jacobi_omp2(double ***U, double ***F, double ***U_new, int N, int iter_max, double tolerance);
 
 #endif

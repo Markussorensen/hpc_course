@@ -264,3 +264,59 @@ plt.ylabel("MFLOPS pr. Second")
 plt.legend()
 plt.savefig("assignment2/Poisson3D/jacobian_gauss_size_gbits_normal.png")
 plt.close()
+
+#Printing speed up for jacobian methods for N = 300
+speedup = jacobian_threads_time[0,:,6]/jacobian_threads_time[:,:,6]
+print(speedup)
+
+#Comparing simpel jacobian omp with normal jacobian for no compiler optimization
+methods = ["normal", "simpel", "omp1", "omp2", "omp3"]
+threads = [1, 2, 4, 8, 16]
+sizes = [10, 50, 100, 150, 200, 250, 300]
+jacobian_threads_time_nocompiler = np.zeros((5, len(threads), len(sizes)))
+jacobian_threads_gbits_nocompiler = np.zeros((5, len(threads), len(sizes)))
+
+index = 0
+with open("assignment2/Poisson3D/jacobian15181894.out", "r") as f:
+    all_lines = f.readlines()
+    all_lines = all_lines[1:]
+    method_idx = 0
+    for line in all_lines:
+        linearray = line.split(" ")
+        if linearray[0] == "Testing":
+            thread = int(linearray[2])
+            size = int(linearray[5])
+            thread_idx = threads.index(thread)
+            size_idx = sizes.index(size)
+        elif "OMP Jacobian - 3" in line:
+            method_idx = 4
+        elif "OMP Jacobian - 2" in line:
+            method_idx = 3
+        elif "OMP Jacobian - 1" in line:
+            method_idx = 2
+        elif "OMP Jacobian - Simpel" in line:
+            method_idx = 1
+        elif "Normal Jacobian" in line:
+            method_idx = 0
+        elif linearray[0] == "iter:":
+            jacobian_threads_time_nocompiler[method_idx, thread_idx, size_idx] = float(linearray[5].split(",")[0])
+            jacobian_threads_gbits_nocompiler[method_idx, thread_idx, size_idx] = float(linearray[12].split(",")[0])
+
+#Jacobian size vs time
+sizes = [10, 50, 100, 150, 200, 250, 300]
+for i in range(len(sizes)):
+    jacobian_normal_time = jacobian_threads_time_nocompiler[0,:,i]
+    jacobian_simpel_time = jacobian_threads_time_nocompiler[1,:,i]
+
+    plt.figure()
+    plt.plot(threads, jacobian_normal_time, c="red", label="Jacobi sequential")
+    plt.plot(threads, jacobian_simpel_time, c="blue", label="Jacobi omp")
+    plt.scatter(threads, jacobian_normal_time, c="red")
+    plt.scatter(threads, jacobian_simpel_time, c="blue")
+    plt.xlabel("Threads")
+    plt.ylabel("Time (s)")
+    plt.title("N = " + str(sizes[i]))
+    plt.legend()
+    plt.savefig("assignment2/Poisson3D/jacobian_threads_normal_simpel_nocompiler_" + str(sizes[i]) + ".png")
+    plt.close()
+

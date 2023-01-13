@@ -14,6 +14,8 @@
 #BSUB -W 60
 #BSUB -R "span[hosts=1]"
 
+lscpu
+
 for nt in 1 2 4 8 16; do
     for size in 10 50 100 150 200 250 300; do
         echo " "

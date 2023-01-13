@@ -135,7 +135,7 @@ jacobi_omp1(double ***U, double ***F, double ***U_new, int N, int iter_max, doub
     for (int iter = 0; iter < iter_max; iter++) {
         last_iter = iter;
         se = 0.0; //Calculating sum of errors
-        #pragma omp parallel for private(i,j,k,err) reduction(+:se) schedule(dynamic)
+        #pragma omp parallel for private(i,j,k,err) reduction(+:se) schedule(static)
         for (int i = 1; i < N+1; i++) {
             for (int j = 1; j < N+1; j++) {
                 for (int k = 1; k < N+1; k++) {
@@ -151,7 +151,7 @@ jacobi_omp1(double ***U, double ***F, double ***U_new, int N, int iter_max, doub
         }
         //print mse
         
-        #pragma omp parallel for private(i,j,k) schedule(dynamic)
+        #pragma omp parallel for private(i,j,k) schedule(static)
         for (int i = 1; i < N+1; i++) {
             for (int j = 1; j < N+1; j++) {
                 for (int k = 1; k < N+1; k++) {
@@ -234,7 +234,7 @@ jacobi_omp3(double ***U, double ***F, double ***U_new, int N, int iter_max, doub
     double total_flops = 0;
     double start, end;
     int i, j, k;
-    
+
 
 
     start = omp_get_wtime();

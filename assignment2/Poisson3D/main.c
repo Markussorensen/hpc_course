@@ -79,7 +79,10 @@ main(int argc, char *argv[]) {
         exit(-1);
     }
     printf("OMP Jacobian - 3 \n");
-    jacobi_omp3(u_omp, f_omp, u_new_omp, N, iter_max, tolerance);
+    init_u_omp(u_new_omp, N, start_T);
+    init_u_omp(u_omp, N, start_T);
+    init_f_omp(f_omp, N);
+    jacobi_omp_simpel(u_omp, f_omp, u_new_omp, N, iter_max, tolerance);
     output_omp = "poisson_res_j_omp3";
 
     printf("OMP Jacobian - 2 \n");

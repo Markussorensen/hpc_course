@@ -1,0 +1,124 @@
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                24
+On-line CPU(s) list:   0-23
+Thread(s) per core:    1
+Core(s) per socket:    12
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 79
+Model name:            Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz
+Stepping:              1
+CPU MHz:               2199.865
+CPU max MHz:           2900.0000
+CPU min MHz:           1200.0000
+BogoMIPS:              4389.38
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              30720K
+NUMA node0 CPU(s):     0-11
+NUMA node1 CPU(s):     12-23
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd rsb_ctxsw ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap intel_pt xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts md_clear spec_ctrl intel_stibp flush_l1d
+ 
+Testing for 1 threads and 10 size
+N: 10 
+Normal Gauss Seidel 
+iter: 59, mse: 0.009295, time: 0.000270, total gigaflops: 0.000590, gigaflops pr second: 2.187162 
+OMP Gauss Seidel 
+last iter 59 
+iter: 59, mse: 0.009295, time: 0.001054, total gigaflops: 0.000590, gigaflops pr second: 0.559895 
+ 
+Testing for 1 threads and 50 size
+N: 50 
+Normal Gauss Seidel 
+iter: 418, mse: 0.009997, time: 0.293718, total gigaflops: 0.522500, gigaflops pr second: 1.778919 
+OMP Gauss Seidel 
+last iter 418 
+iter: 418, mse: 0.009997, time: 0.415310, total gigaflops: 0.522500, gigaflops pr second: 1.258097 
+ 
+Testing for 1 threads and 100 size
+N: 100 
+Normal Gauss Seidel 
+iter: 442, mse: 0.009981, time: 2.563695, total gigaflops: 4.420000, gigaflops pr second: 1.724074 
+OMP Gauss Seidel 
+last iter 442 
+iter: 442, mse: 0.009981, time: 3.079904, total gigaflops: 4.420000, gigaflops pr second: 1.435110 
+ 
+Testing for 1 threads and 150 size
+N: 150 
+Normal Gauss Seidel 
+iter: 366, mse: 0.009985, time: 7.347174, total gigaflops: 12.352500, gigaflops pr second: 1.681259 
+OMP Gauss Seidel 
+last iter 366 
+iter: 366, mse: 0.009985, time: 8.304977, total gigaflops: 12.352500, gigaflops pr second: 1.487361 
+ 
+Testing for 1 threads and 200 size
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15181629: <gauss> in cluster <dcc> Exited
+
+Job <gauss> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Fri Jan 13 14:50:10 2023
+Job was executed on host(s) <16*n-62-21-26>, in queue <hpcintro>, as user <s183997> in cluster <dcc> at Fri Jan 13 14:50:13 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment2/Poisson3D> was used as the working directory.
+Started at Fri Jan 13 14:50:13 2023
+Terminated at Fri Jan 13 14:50:48 2023
+Results reported at Fri Jan 13 14:50:48 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J gauss
+#BSUB -o gauss%J.out
+#BSUB -q hpcintro
+#BSUB -n 16
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -W 60
+#BSUB -R "span[hosts=1]"
+
+lscpu
+
+for nt in 1 2 4 8 16; do
+    for size in 10 50 100 150 200 250 300; do
+        echo " "
+        echo "Testing for $nt threads and $size size"
+        OMP_NUM_THREADS=$nt
+        ./poisson_gs $size 1000 0.01 0.0
+    done
+done
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 130.
+
+Resource usage summary:
+
+    CPU time :                                   33.87 sec.
+    Max Memory :                                 257 MB
+    Average Memory :                             208.67 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               130815.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   35 sec.
+    Turnaround time :                            38 sec.
+
+The output (if any) is above this job summary.
+

@@ -70,19 +70,12 @@ plt.legend()
 plt.savefig("assignment2/Poisson3D/compare_basic.png")
 
 #OMP vs basic
-# Jacobian
-# threads = [1, 2, 4, 8, 16]
-# sizes = [10, 50, 100, 150, 200, 250, 300]
-# jacobian_threads_array = [[] for i in range(len(threads))]
-
-# index = 0
-# with open('assignment2/Poisson3D/jacobian_omp15178156.out', 'r') as f:
-
 # Gauss-Seidel
 methods = ["basic", "omp"]
 threads = [1, 2, 4, 8, 16]
 sizes = [10, 50, 100, 150, 200, 250, 300]
 gauss_threads_time = np.zeros((2, len(threads), len(sizes)))
+gauss_threads_gbits = np.zeros((2, len(threads), len(sizes)))
 
 index = 0
 with open('assignment2/Poisson3D/gauss15178685.out', 'r') as f:
@@ -103,8 +96,10 @@ with open('assignment2/Poisson3D/gauss15178685.out', 'r') as f:
         elif linearray[0] == "iter:":
             if omp:
                 gauss_threads_time[1, thread_idx, size_idx] = float(linearray[5].split(",")[0])
+                gauss_threads_gbits[1, thread_idx, size_idx] = float(linearray[12].split(",")[0])
             else:
                 gauss_threads_time[0, thread_idx, size_idx] = float(linearray[5].split(",")[0])
+                gauss_threads_gbits[0, thread_idx, size_idx] = float(linearray[12].split(",")[0])
 
 for i in range(1,len(sizes)):
     plt.figure()
@@ -118,3 +113,67 @@ for i in range(1,len(sizes)):
     plt.title("N = " + str(sizes[i]))
     plt.legend()
     plt.savefig("assignment2/Poisson3D/gauss_threads_" + str(sizes[i]) + ".png")
+
+# Jacobian
+methods = ["normal", "simpel", "omp1", "omp2", "omp3"]
+threads = [1, 2, 4, 8, 16]
+sizes = [10, 50, 100, 150, 200, 250, 300]
+jacobian_threads_time = np.zeros((5, len(threads), len(sizes)))
+jacobian_threads_gbits = np.zeros((5, len(threads), len(sizes)))
+
+index = 0
+with open('assignment2/Poisson3D/jacobian15179140.out', 'r') as f:
+    all_lines = f.readlines()
+    all_lines = all_lines[1:]
+    method_idx = 0
+    for line in all_lines:
+        linearray = line.split(" ")
+        if linearray[0] == "Testing":
+            thread = int(linearray[2])
+            size = int(linearray[5])
+            thread_idx = threads.index(thread)
+            size_idx = sizes.index(size)
+        elif "OMP Jacobian - 3" in line:
+            method_idx = 4
+        elif "OMP Jacobian - 2" in line:
+            method_idx = 3
+        elif "OMP Jacobian - 1" in line:
+            method_idx = 2
+        elif "OMP Jacobian - Simpel" in line:
+            method_idx = 1
+        elif "Normal Jacobian" in line:
+            method_idx = 0
+        elif linearray[0] == "iter:":
+            jacobian_threads_time[method_idx, thread_idx, size_idx] = float(linearray[5].split(",")[0])
+            jacobian_threads_gbits[method_idx, thread_idx, size_idx] = float(linearray[12].split(",")[0])
+
+for i in range(1,len(sizes)):
+    plt.figure()
+    plt.plot(threads, jacobian_threads_time[0,:,i], c="red", label="Jacobian, normal", alpha=0.5)
+    plt.plot(threads, jacobian_threads_time[1,:,i], c="orange", label="Jacobian, OMP, simple")
+    plt.plot(threads, jacobian_threads_time[2,:,i], c="green", label="Jacobian, OMP, 1", alpha=0.5)
+    plt.plot(threads, jacobian_threads_time[3,:,i], c="blue", label="Jacobian, OMP, 2", alpha=0.5)
+    plt.plot(threads, jacobian_threads_time[4,:,i], c="purple", label="Jacobian, OMP, 3", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_time[0,:,i], c="red", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_time[1,:,i], c="orange")
+    plt.scatter(threads, jacobian_threads_time[2,:,i], c="green", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_time[3,:,i], c="blue", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_time[4,:,i], c="purple", alpha=0.5)
+    plt.xticks(threads)
+    plt.xlabel("Threads")
+    plt.ylabel("Time (s)")
+    plt.title("N = " + str(sizes[i]))
+    plt.legend()
+    plt.savefig("assignment2/Poisson3D/jacobian_threads_" + str(sizes[i]) + ".png")
+
+#Jacobian Size vs Time
+sizes = [10, 50, 100, 150, 200, 250, 300]
+jacobian_normal_time = jacobian_threads_time[0,0,:]
+
+plt.figure()
+plt.plot(sizes, jacobian_normal_time, c="red", label="Jacobi")
+plt.scatter(sizes, jacobian_normal_time, c="red")
+plt.xlabel("$N$")
+plt.ylabel("Time (s)")
+plt.legend()
+plt.savefig("assignment2/Poisson3D/jacobian_size_normal.png")

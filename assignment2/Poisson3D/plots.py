@@ -25,6 +25,7 @@ plt.ylabel("Log mean squared iteration difference")
 plt.hlines(np.log(0.01), 0, 500, color="black", linestyles="dashed", label="Threshold = log(0.01)", alpha=0.2)
 plt.legend()
 plt.savefig("assignment2/Poisson3D/jacobian_basic.png")
+plt.close()
 
 # Gauss-Seidel
 sizes = [10, 50, 100, 150, 200, 250, 300]
@@ -55,6 +56,7 @@ plt.ylabel("Log mean squared iteration difference")
 plt.hlines(np.log(0.01), 0, 500, color="black", linestyles="dashed", label="Threshold = log(0.01)", alpha=0.2)
 plt.legend()
 plt.savefig("assignment2/Poisson3D/gauss_basic.png")
+plt.close()
 
 # Comparison for N = 150 and N = 300
 
@@ -68,6 +70,7 @@ plt.xlabel("Iteration")
 plt.ylabel("Log mean squared iteration difference")
 plt.legend()
 plt.savefig("assignment2/Poisson3D/compare_basic.png")
+plt.close()
 
 #OMP vs basic
 # Gauss-Seidel
@@ -113,6 +116,7 @@ for i in range(1,len(sizes)):
     plt.title("N = " + str(sizes[i]))
     plt.legend()
     plt.savefig("assignment2/Poisson3D/gauss_threads_" + str(sizes[i]) + ".png")
+    plt.close()
 
 # Jacobian
 methods = ["normal", "simpel", "omp1", "omp2", "omp3"]
@@ -165,6 +169,56 @@ for i in range(1,len(sizes)):
     plt.title("N = " + str(sizes[i]))
     plt.legend()
     plt.savefig("assignment2/Poisson3D/jacobian_threads_" + str(sizes[i]) + ".png")
+    plt.close()
+
+for i in range(1,len(sizes)):
+    plt.figure()
+    plt.plot(threads, jacobian_threads_gbits[0,:,i], c="red", label="Jacobian, normal", alpha=0.5)
+    plt.plot(threads, jacobian_threads_gbits[1,:,i], c="orange", label="Jacobian, OMP, simple")
+    plt.plot(threads, jacobian_threads_gbits[2,:,i], c="green", label="Jacobian, OMP, 1", alpha=0.5)
+    plt.plot(threads, jacobian_threads_gbits[3,:,i], c="blue", label="Jacobian, OMP, 2", alpha=0.5)
+    plt.plot(threads, jacobian_threads_gbits[4,:,i], c="purple", label="Jacobian, OMP, 3", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_gbits[0,:,i], c="red", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_gbits[1,:,i], c="orange")
+    plt.scatter(threads, jacobian_threads_gbits[2,:,i], c="green", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_gbits[3,:,i], c="blue", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_gbits[4,:,i], c="purple", alpha=0.5)
+    plt.xticks(threads)
+    plt.xlabel("Threads")
+    plt.ylabel("MFLOPS pr. Second")
+    plt.title("N = " + str(sizes[i]))
+    plt.legend()
+    plt.savefig("assignment2/Poisson3D/jacobian_threads_gbits_" + str(sizes[i]) + ".png")
+    plt.close()
+
+#Jacobian normal vs OMP simpel
+for i in range(1,len(sizes)):
+    plt.figure()
+    plt.plot(threads, jacobian_threads_time[0,:,i], c="red", label="Jacobian, normal", alpha=0.5)
+    plt.plot(threads, jacobian_threads_time[1,:,i], c="green", label="Jacobian, OMP, simple")
+    plt.scatter(threads, jacobian_threads_time[0,:,i], c="red", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_time[1,:,i], c="green")
+    plt.xticks(threads)
+    plt.xlabel("Threads")
+    plt.ylabel("Time (s)")
+    plt.title("N = " + str(sizes[i]))
+    plt.legend()
+    plt.savefig("assignment2/Poisson3D/jacobian_normal_omp_simpel_" + str(sizes[i]) + ".png")
+    plt.close()
+
+for i in range(1,len(sizes)):
+    plt.figure()
+    plt.plot(threads, jacobian_threads_gbits[0,:,i]*1000, c="red", label="Jacobian, normal", alpha=0.5)
+    plt.plot(threads, jacobian_threads_gbits[1,:,i]*1000, c="green", label="Jacobian, OMP, simple")
+    plt.scatter(threads, jacobian_threads_gbits[0,:,i]*1000, c="red", alpha=0.5)
+    plt.scatter(threads, jacobian_threads_gbits[1,:,i]*1000, c="green")
+    plt.xticks(threads)
+    plt.xlabel("Threads")
+    plt.ylabel("MFLOPS pr. Second")
+    plt.title("N = " + str(sizes[i]))
+    plt.legend()
+    plt.savefig("assignment2/Poisson3D/jacobian_normal_omp_simpel_gbits_" + str(sizes[i]) + ".png")
+    plt.close()
 
 #Jacobian Size vs Time
 sizes = [10, 50, 100, 150, 200, 250, 300]
@@ -177,6 +231,7 @@ plt.xlabel("$N$")
 plt.ylabel("Time (s)")
 plt.legend()
 plt.savefig("assignment2/Poisson3D/jacobian_size_normal.png")
+plt.close()
 
 #Jacobian and gauss size vs time
 sizes = [10, 50, 100, 150, 200, 250, 300]
@@ -192,6 +247,7 @@ plt.xlabel("$N$")
 plt.ylabel("Time (s)")
 plt.legend()
 plt.savefig("assignment2/Poisson3D/jacobian_gauss_size_time_normal.png")
+plt.close()
 
 #Jacobian and gauss size vs Gbits
 sizes = [10, 50, 100, 150, 200, 250, 300]
@@ -207,3 +263,4 @@ plt.xlabel("$N$")
 plt.ylabel("MFLOPS pr. Second")
 plt.legend()
 plt.savefig("assignment2/Poisson3D/jacobian_gauss_size_gbits_normal.png")
+plt.close()

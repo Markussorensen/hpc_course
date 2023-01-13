@@ -1,0 +1,196 @@
+ 
+Testing for 1 threads and 10 size
+N: 10 
+Normal Gauss Seidel 
+iter: 59, mse: 0.009295, time: 0.000271, total gigaflops: 0.000590, gigaflops pr second: 2.174122 
+OMP Gauss Seidel 
+last iter 59 
+iter: 59, mse: 0.009295, time: 0.000998, total gigaflops: 0.000590, gigaflops pr second: 0.591320 
+ 
+Testing for 1 threads and 50 size
+N: 50 
+Normal Gauss Seidel 
+iter: 418, mse: 0.009997, time: 0.293240, total gigaflops: 0.522500, gigaflops pr second: 1.781814 
+OMP Gauss Seidel 
+last iter 418 
+iter: 418, mse: 0.009997, time: 0.412582, total gigaflops: 0.522500, gigaflops pr second: 1.266415 
+ 
+Testing for 1 threads and 100 size
+N: 100 
+Normal Gauss Seidel 
+iter: 442, mse: 0.009981, time: 2.569247, total gigaflops: 4.420000, gigaflops pr second: 1.720348 
+OMP Gauss Seidel 
+last iter 442 
+iter: 442, mse: 0.009981, time: 3.066464, total gigaflops: 4.420000, gigaflops pr second: 1.441400 
+ 
+Testing for 1 threads and 150 size
+N: 150 
+Normal Gauss Seidel 
+iter: 366, mse: 0.009985, time: 7.299287, total gigaflops: 12.352500, gigaflops pr second: 1.692289 
+OMP Gauss Seidel 
+last iter 366 
+iter: 366, mse: 0.009985, time: 8.234951, total gigaflops: 12.352500, gigaflops pr second: 1.500009 
+ 
+Testing for 1 threads and 200 size
+N: 200 
+Normal Gauss Seidel 
+iter: 310, mse: 0.009983, time: 14.722782, total gigaflops: 24.800000, gigaflops pr second: 1.684464 
+OMP Gauss Seidel 
+last iter 310 
+iter: 310, mse: 0.009983, time: 16.112274, total gigaflops: 24.800000, gigaflops pr second: 1.539199 
+ 
+Testing for 1 threads and 250 size
+N: 250 
+Normal Gauss Seidel 
+iter: 270, mse: 0.009986, time: 25.071308, total gigaflops: 42.187500, gigaflops pr second: 1.682700 
+OMP Gauss Seidel 
+last iter 270 
+iter: 270, mse: 0.009986, time: 27.074456, total gigaflops: 42.187500, gigaflops pr second: 1.558203 
+ 
+Testing for 1 threads and 300 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 2 threads and 10 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 2 threads and 50 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 2 threads and 100 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 2 threads and 150 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 2 threads and 200 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 2 threads and 250 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 2 threads and 300 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 4 threads and 10 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 4 threads and 50 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 4 threads and 100 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 4 threads and 150 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 4 threads and 200 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 4 threads and 250 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 4 threads and 300 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 8 threads and 10 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 8 threads and 50 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 8 threads and 100 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 8 threads and 150 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 8 threads and 200 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 8 threads and 250 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 8 threads and 300 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 16 threads and 10 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 16 threads and 50 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 16 threads and 100 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 16 threads and 150 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 16 threads and 200 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 16 threads and 250 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+ 
+Testing for 16 threads and 300 size
+/zhome/69/1/137385/.lsbatch/1673603441.15178244.shell: line 22: ./poisson_gs: No such file or directory
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15178244: <gauss> in cluster <dcc> Exited
+
+Job <gauss> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Fri Jan 13 10:50:41 2023
+Job was executed on host(s) <16*n-62-21-78>, in queue <hpcintro>, as user <s183997> in cluster <dcc> at Fri Jan 13 10:50:42 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment2/Poisson3D> was used as the working directory.
+Started at Fri Jan 13 10:50:42 2023
+Terminated at Fri Jan 13 10:52:33 2023
+Results reported at Fri Jan 13 10:52:33 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J gauss
+#BSUB -o gauss%J.out
+#BSUB -q hpcintro
+#BSUB -n 16
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -W 60
+#BSUB -R "span[hosts=1]"
+
+for nt in 1 2 4 8 16; do
+    for size in 10 50 100 150 200 250 300; do
+        echo " "
+        echo "Testing for $nt threads and $size size"
+        OMP_NUM_THREADS=$nt
+        ./poisson_gs $size 1000 0.01 0.0
+    done
+done
+
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time :                                   106.49 sec.
+    Max Memory :                                 494 MB
+    Average Memory :                             366.67 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               130578.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                5
+    Run time :                                   110 sec.
+    Turnaround time :                            112 sec.
+
+The output (if any) is above this job summary.
+

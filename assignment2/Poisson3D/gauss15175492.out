@@ -1,0 +1,341 @@
+ 
+Testing for 1 threads and 10 size
+N: 10 
+Normal Gauss Seidel 
+iter: 59, mse: 0.009295, time: 0.000271, total gigaflops: 0.000590, gigaflops pr second: 2.175268 
+OMP Gauss Seidel 
+last iter 59 
+iter: 59, mse: 0.009295, time: 0.001001, total gigaflops: 0.000590, gigaflops pr second: 0.589398 
+ 
+Testing for 1 threads and 50 size
+N: 50 
+Normal Gauss Seidel 
+iter: 418, mse: 0.009997, time: 0.293107, total gigaflops: 0.522500, gigaflops pr second: 1.782623 
+OMP Gauss Seidel 
+last iter 418 
+iter: 418, mse: 0.009997, time: 0.412695, total gigaflops: 0.522500, gigaflops pr second: 1.266067 
+ 
+Testing for 1 threads and 100 size
+N: 100 
+Normal Gauss Seidel 
+iter: 442, mse: 0.009981, time: 2.567860, total gigaflops: 4.420000, gigaflops pr second: 1.721277 
+OMP Gauss Seidel 
+last iter 442 
+iter: 442, mse: 0.009981, time: 3.065402, total gigaflops: 4.420000, gigaflops pr second: 1.441899 
+ 
+Testing for 1 threads and 150 size
+N: 150 
+Normal Gauss Seidel 
+iter: 366, mse: 0.009985, time: 7.291687, total gigaflops: 12.352500, gigaflops pr second: 1.694052 
+OMP Gauss Seidel 
+last iter 366 
+iter: 366, mse: 0.009985, time: 8.225306, total gigaflops: 12.352500, gigaflops pr second: 1.501768 
+ 
+Testing for 1 threads and 200 size
+N: 200 
+Normal Gauss Seidel 
+iter: 310, mse: 0.009983, time: 14.702651, total gigaflops: 24.800000, gigaflops pr second: 1.686771 
+OMP Gauss Seidel 
+last iter 310 
+iter: 310, mse: 0.009983, time: 16.120351, total gigaflops: 24.800000, gigaflops pr second: 1.538428 
+ 
+Testing for 1 threads and 250 size
+N: 250 
+Normal Gauss Seidel 
+iter: 270, mse: 0.009986, time: 25.090997, total gigaflops: 42.187500, gigaflops pr second: 1.681380 
+OMP Gauss Seidel 
+last iter 270 
+iter: 270, mse: 0.009986, time: 27.013581, total gigaflops: 42.187500, gigaflops pr second: 1.561714 
+ 
+Testing for 1 threads and 300 size
+N: 300 
+Normal Gauss Seidel 
+iter: 241, mse: 0.009975, time: 38.786254, total gigaflops: 65.070000, gigaflops pr second: 1.677656 
+OMP Gauss Seidel 
+last iter 241 
+iter: 241, mse: 0.009975, time: 41.254272, total gigaflops: 65.070000, gigaflops pr second: 1.577291 
+ 
+Testing for 2 threads and 10 size
+N: 10 
+Normal Gauss Seidel 
+iter: 59, mse: 0.009295, time: 0.000271, total gigaflops: 0.000590, gigaflops pr second: 2.175613 
+OMP Gauss Seidel 
+last iter 59 
+iter: 59, mse: 0.009295, time: 0.001344, total gigaflops: 0.000590, gigaflops pr second: 0.438851 
+ 
+Testing for 2 threads and 50 size
+N: 50 
+Normal Gauss Seidel 
+iter: 418, mse: 0.009997, time: 0.293215, total gigaflops: 0.522500, gigaflops pr second: 1.781967 
+OMP Gauss Seidel 
+last iter 418 
+iter: 418, mse: 0.009997, time: 0.419126, total gigaflops: 0.522500, gigaflops pr second: 1.246642 
+ 
+Testing for 2 threads and 100 size
+N: 100 
+Normal Gauss Seidel 
+iter: 442, mse: 0.009981, time: 2.567046, total gigaflops: 4.420000, gigaflops pr second: 1.721823 
+OMP Gauss Seidel 
+last iter 442 
+iter: 442, mse: 0.009981, time: 3.097461, total gigaflops: 4.420000, gigaflops pr second: 1.426975 
+ 
+Testing for 2 threads and 150 size
+N: 150 
+Normal Gauss Seidel 
+iter: 366, mse: 0.009985, time: 7.290820, total gigaflops: 12.352500, gigaflops pr second: 1.694254 
+OMP Gauss Seidel 
+last iter 366 
+iter: 366, mse: 0.009985, time: 8.237676, total gigaflops: 12.352500, gigaflops pr second: 1.499513 
+ 
+Testing for 2 threads and 200 size
+N: 200 
+Normal Gauss Seidel 
+iter: 310, mse: 0.009983, time: 14.692778, total gigaflops: 24.800000, gigaflops pr second: 1.687904 
+OMP Gauss Seidel 
+last iter 310 
+iter: 310, mse: 0.009983, time: 16.267366, total gigaflops: 24.800000, gigaflops pr second: 1.524525 
+ 
+Testing for 2 threads and 250 size
+N: 250 
+Normal Gauss Seidel 
+iter: 270, mse: 0.009986, time: 25.052295, total gigaflops: 42.187500, gigaflops pr second: 1.683977 
+OMP Gauss Seidel 
+last iter 270 
+iter: 270, mse: 0.009986, time: 27.201030, total gigaflops: 42.187500, gigaflops pr second: 1.550952 
+ 
+Testing for 2 threads and 300 size
+N: 300 
+Normal Gauss Seidel 
+iter: 241, mse: 0.009975, time: 38.775534, total gigaflops: 65.070000, gigaflops pr second: 1.678120 
+OMP Gauss Seidel 
+last iter 241 
+iter: 241, mse: 0.009975, time: 41.655775, total gigaflops: 65.070000, gigaflops pr second: 1.562088 
+ 
+Testing for 4 threads and 10 size
+N: 10 
+Normal Gauss Seidel 
+iter: 59, mse: 0.009295, time: 0.000270, total gigaflops: 0.000590, gigaflops pr second: 2.185015 
+OMP Gauss Seidel 
+last iter 59 
+iter: 59, mse: 0.009295, time: 0.001597, total gigaflops: 0.000590, gigaflops pr second: 0.369385 
+ 
+Testing for 4 threads and 50 size
+N: 50 
+Normal Gauss Seidel 
+iter: 418, mse: 0.009997, time: 0.293121, total gigaflops: 0.522500, gigaflops pr second: 1.782543 
+OMP Gauss Seidel 
+last iter 418 
+iter: 418, mse: 0.009997, time: 0.429581, total gigaflops: 0.522500, gigaflops pr second: 1.216301 
+ 
+Testing for 4 threads and 100 size
+N: 100 
+Normal Gauss Seidel 
+iter: 442, mse: 0.009981, time: 2.568647, total gigaflops: 4.420000, gigaflops pr second: 1.720750 
+OMP Gauss Seidel 
+last iter 442 
+iter: 442, mse: 0.009981, time: 3.207455, total gigaflops: 4.420000, gigaflops pr second: 1.378040 
+ 
+Testing for 4 threads and 150 size
+N: 150 
+Normal Gauss Seidel 
+iter: 366, mse: 0.009985, time: 7.289367, total gigaflops: 12.352500, gigaflops pr second: 1.694592 
+OMP Gauss Seidel 
+last iter 366 
+iter: 366, mse: 0.009985, time: 8.127105, total gigaflops: 12.352500, gigaflops pr second: 1.519914 
+ 
+Testing for 4 threads and 200 size
+N: 200 
+Normal Gauss Seidel 
+iter: 310, mse: 0.009983, time: 14.706225, total gigaflops: 24.800000, gigaflops pr second: 1.686361 
+OMP Gauss Seidel 
+last iter 310 
+iter: 310, mse: 0.009983, time: 16.097709, total gigaflops: 24.800000, gigaflops pr second: 1.540592 
+ 
+Testing for 4 threads and 250 size
+N: 250 
+Normal Gauss Seidel 
+iter: 270, mse: 0.009986, time: 25.086200, total gigaflops: 42.187500, gigaflops pr second: 1.681701 
+OMP Gauss Seidel 
+last iter 270 
+iter: 270, mse: 0.009986, time: 27.576382, total gigaflops: 42.187500, gigaflops pr second: 1.529842 
+ 
+Testing for 4 threads and 300 size
+N: 300 
+Normal Gauss Seidel 
+iter: 241, mse: 0.009975, time: 38.736226, total gigaflops: 65.070000, gigaflops pr second: 1.679823 
+OMP Gauss Seidel 
+last iter 241 
+iter: 241, mse: 0.009975, time: 42.018421, total gigaflops: 65.070000, gigaflops pr second: 1.548607 
+ 
+Testing for 8 threads and 10 size
+N: 10 
+Normal Gauss Seidel 
+iter: 59, mse: 0.009295, time: 0.000272, total gigaflops: 0.000590, gigaflops pr second: 2.168791 
+OMP Gauss Seidel 
+last iter 59 
+iter: 59, mse: 0.009295, time: 0.001706, total gigaflops: 0.000590, gigaflops pr second: 0.345841 
+ 
+Testing for 8 threads and 50 size
+N: 50 
+Normal Gauss Seidel 
+iter: 418, mse: 0.009997, time: 0.293128, total gigaflops: 0.522500, gigaflops pr second: 1.782498 
+OMP Gauss Seidel 
+last iter 418 
+iter: 418, mse: 0.009997, time: 0.410184, total gigaflops: 0.522500, gigaflops pr second: 1.273819 
+ 
+Testing for 8 threads and 100 size
+N: 100 
+Normal Gauss Seidel 
+iter: 442, mse: 0.009981, time: 2.567526, total gigaflops: 4.420000, gigaflops pr second: 1.721502 
+OMP Gauss Seidel 
+last iter 442 
+iter: 442, mse: 0.009981, time: 3.221814, total gigaflops: 4.420000, gigaflops pr second: 1.371898 
+ 
+Testing for 8 threads and 150 size
+N: 150 
+Normal Gauss Seidel 
+iter: 366, mse: 0.009985, time: 7.292292, total gigaflops: 12.352500, gigaflops pr second: 1.693912 
+OMP Gauss Seidel 
+last iter 366 
+iter: 366, mse: 0.009985, time: 8.331417, total gigaflops: 12.352500, gigaflops pr second: 1.482641 
+ 
+Testing for 8 threads and 200 size
+N: 200 
+Normal Gauss Seidel 
+iter: 310, mse: 0.009983, time: 14.705397, total gigaflops: 24.800000, gigaflops pr second: 1.686456 
+OMP Gauss Seidel 
+last iter 310 
+iter: 310, mse: 0.009983, time: 16.062775, total gigaflops: 24.800000, gigaflops pr second: 1.543942 
+ 
+Testing for 8 threads and 250 size
+N: 250 
+Normal Gauss Seidel 
+iter: 270, mse: 0.009986, time: 25.084430, total gigaflops: 42.187500, gigaflops pr second: 1.681820 
+OMP Gauss Seidel 
+last iter 270 
+iter: 270, mse: 0.009986, time: 27.034684, total gigaflops: 42.187500, gigaflops pr second: 1.560495 
+ 
+Testing for 8 threads and 300 size
+N: 300 
+Normal Gauss Seidel 
+iter: 241, mse: 0.009975, time: 38.739718, total gigaflops: 65.070000, gigaflops pr second: 1.679672 
+OMP Gauss Seidel 
+last iter 241 
+iter: 241, mse: 0.009975, time: 41.933093, total gigaflops: 65.070000, gigaflops pr second: 1.551758 
+ 
+Testing for 16 threads and 10 size
+N: 10 
+Normal Gauss Seidel 
+iter: 59, mse: 0.009295, time: 0.000272, total gigaflops: 0.000590, gigaflops pr second: 2.169604 
+OMP Gauss Seidel 
+last iter 59 
+iter: 59, mse: 0.009295, time: 0.105358, total gigaflops: 0.000590, gigaflops pr second: 0.005600 
+ 
+Testing for 16 threads and 50 size
+N: 50 
+Normal Gauss Seidel 
+iter: 418, mse: 0.009997, time: 0.293187, total gigaflops: 0.522500, gigaflops pr second: 1.782138 
+OMP Gauss Seidel 
+last iter 418 
+iter: 418, mse: 0.009997, time: 1.224045, total gigaflops: 0.522500, gigaflops pr second: 0.426863 
+ 
+Testing for 16 threads and 100 size
+N: 100 
+Normal Gauss Seidel 
+iter: 442, mse: 0.009981, time: 2.569257, total gigaflops: 4.420000, gigaflops pr second: 1.720342 
+OMP Gauss Seidel 
+last iter 442 
+iter: 442, mse: 0.009981, time: 4.486374, total gigaflops: 4.420000, gigaflops pr second: 0.985206 
+ 
+Testing for 16 threads and 150 size
+N: 150 
+Normal Gauss Seidel 
+iter: 366, mse: 0.009985, time: 7.287810, total gigaflops: 12.352500, gigaflops pr second: 1.694954 
+OMP Gauss Seidel 
+last iter 366 
+iter: 366, mse: 0.009985, time: 8.633405, total gigaflops: 12.352500, gigaflops pr second: 1.430780 
+ 
+Testing for 16 threads and 200 size
+N: 200 
+Normal Gauss Seidel 
+iter: 310, mse: 0.009983, time: 14.700292, total gigaflops: 24.800000, gigaflops pr second: 1.687041 
+OMP Gauss Seidel 
+last iter 310 
+iter: 310, mse: 0.009983, time: 15.261432, total gigaflops: 24.800000, gigaflops pr second: 1.625011 
+ 
+Testing for 16 threads and 250 size
+N: 250 
+Normal Gauss Seidel 
+iter: 270, mse: 0.009986, time: 25.052987, total gigaflops: 42.187500, gigaflops pr second: 1.683931 
+OMP Gauss Seidel 
+last iter 270 
+iter: 270, mse: 0.009986, time: 26.636396, total gigaflops: 42.187500, gigaflops pr second: 1.583829 
+ 
+Testing for 16 threads and 300 size
+N: 300 
+Normal Gauss Seidel 
+iter: 241, mse: 0.009975, time: 38.736111, total gigaflops: 65.070000, gigaflops pr second: 1.679828 
+OMP Gauss Seidel 
+last iter 241 
+iter: 241, mse: 0.009975, time: 40.467982, total gigaflops: 65.070000, gigaflops pr second: 1.607938 
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15175492: <gauss> in cluster <dcc> Done
+
+Job <gauss> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Thu Jan 12 16:18:00 2023
+Job was executed on host(s) <16*n-62-21-3>, in queue <hpcintro>, as user <s183997> in cluster <dcc> at Thu Jan 12 16:30:06 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment2/Poisson3D> was used as the working directory.
+Started at Thu Jan 12 16:30:06 2023
+Terminated at Thu Jan 12 16:45:40 2023
+Results reported at Thu Jan 12 16:45:40 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J gauss
+#BSUB -o gauss%J.out
+#BSUB -q hpcintro
+#BSUB -n 16
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -W 60
+#BSUB -R "span[hosts=1]"
+
+for nt in 1 2 4 8 16; do
+    for size in 10 50 100 150 200 250 300; do
+        echo " "
+        echo "Testing for $nt threads and $size size"
+        OMP_NUM_THREADS=$nt
+        ./poisson_gs $size 1000 0.01 0.0
+    done
+done
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2315.91 sec.
+    Max Memory :                                 848 MB
+    Average Memory :                             634.67 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               130224.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                20
+    Run time :                                   934 sec.
+    Turnaround time :                            1660 sec.
+
+The output (if any) is above this job summary.
+

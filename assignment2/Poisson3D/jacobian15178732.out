@@ -1,0 +1,656 @@
+ 
+Testing for 1 threads and 10 size
+N: 10 
+OMP Jacobian - 3 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000659, total gigaflops: 0.000980, gigaflops pr second: 1.486790 
+OMP Jacobian - 2 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000672, total gigaflops: 0.000980, gigaflops pr second: 1.458077 
+OMP Jacobian - 1 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000719, total gigaflops: 0.000980, gigaflops pr second: 1.362405 
+OMP Jacobian - Simpel 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000668, total gigaflops: 0.000980, gigaflops pr second: 1.466763 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000448, total gigaflops: 0.000980, gigaflops pr second: 2.187666 
+ 
+Testing for 1 threads and 50 size
+N: 50 
+OMP Jacobian - 3 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.275686, total gigaflops: 0.601250, gigaflops pr second: 2.180922 
+OMP Jacobian - 2 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.291064, total gigaflops: 0.601250, gigaflops pr second: 2.065697 
+OMP Jacobian - 1 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.277117, total gigaflops: 0.601250, gigaflops pr second: 2.169662 
+OMP Jacobian - Simpel 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.275638, total gigaflops: 0.601250, gigaflops pr second: 2.181302 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.276000, total gigaflops: 0.601250, gigaflops pr second: 2.178444 
+ 
+Testing for 1 threads and 100 size
+N: 100 
+OMP Jacobian - 3 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.703752, total gigaflops: 3.780000, gigaflops pr second: 2.218633 
+OMP Jacobian - 2 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.795592, total gigaflops: 3.780000, gigaflops pr second: 2.105156 
+OMP Jacobian - 1 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.709091, total gigaflops: 3.780000, gigaflops pr second: 2.211701 
+OMP Jacobian - Simpel 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.703471, total gigaflops: 3.780000, gigaflops pr second: 2.218999 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.705445, total gigaflops: 3.780000, gigaflops pr second: 2.216430 
+ 
+Testing for 1 threads and 150 size
+N: 150 
+OMP Jacobian - 3 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.635967, total gigaflops: 10.057500, gigaflops pr second: 1.784521 
+OMP Jacobian - 2 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.617279, total gigaflops: 10.057500, gigaflops pr second: 1.790458 
+OMP Jacobian - 1 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.645868, total gigaflops: 10.057500, gigaflops pr second: 1.781391 
+OMP Jacobian - Simpel 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.630852, total gigaflops: 10.057500, gigaflops pr second: 1.786142 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.641026, total gigaflops: 10.057500, gigaflops pr second: 1.782920 
+ 
+Testing for 1 threads and 200 size
+N: 200 
+OMP Jacobian - 3 
+last iter 249 
+iter: 249, mse: 0.009986, time: 11.420113, total gigaflops: 19.920000, gigaflops pr second: 1.744291 
+OMP Jacobian - 2 
+last iter 249 
+iter: 249, mse: 0.009986, time: 11.135838, total gigaflops: 19.920000, gigaflops pr second: 1.788819 
+OMP Jacobian - 1 
+last iter 249 
+iter: 249, mse: 0.009986, time: 11.432607, total gigaflops: 19.920000, gigaflops pr second: 1.742385 
+OMP Jacobian - Simpel 
+last iter 249 
+iter: 249, mse: 0.009986, time: 11.413487, total gigaflops: 19.920000, gigaflops pr second: 1.745304 
+last iter 249 
+iter: 249, mse: 0.009986, time: 11.527198, total gigaflops: 19.920000, gigaflops pr second: 1.728087 
+ 
+Testing for 1 threads and 250 size
+N: 250 
+OMP Jacobian - 3 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.361293, total gigaflops: 33.750000, gigaflops pr second: 1.743169 
+OMP Jacobian - 2 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.091950, total gigaflops: 33.750000, gigaflops pr second: 1.767761 
+OMP Jacobian - 1 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.385415, total gigaflops: 33.750000, gigaflops pr second: 1.741000 
+OMP Jacobian - Simpel 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.345094, total gigaflops: 33.750000, gigaflops pr second: 1.744628 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.324318, total gigaflops: 33.750000, gigaflops pr second: 1.746504 
+ 
+Testing for 1 threads and 300 size
+N: 300 
+OMP Jacobian - 3 
+last iter 192 
+iter: 192, mse: 0.009972, time: 28.756813, total gigaflops: 51.840000, gigaflops pr second: 1.802703 
+OMP Jacobian - 2 
+last iter 192 
+iter: 192, mse: 0.009972, time: 29.297166, total gigaflops: 51.840000, gigaflops pr second: 1.769454 
+OMP Jacobian - 1 
+last iter 192 
+iter: 192, mse: 0.009972, time: 28.923542, total gigaflops: 51.840000, gigaflops pr second: 1.792312 
+OMP Jacobian - Simpel 
+last iter 192 
+iter: 192, mse: 0.009972, time: 28.799003, total gigaflops: 51.840000, gigaflops pr second: 1.800062 
+last iter 192 
+iter: 192, mse: 0.009972, time: 28.881769, total gigaflops: 51.840000, gigaflops pr second: 1.794904 
+ 
+Testing for 2 threads and 10 size
+N: 10 
+OMP Jacobian - 3 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000888, total gigaflops: 0.000980, gigaflops pr second: 1.103356 
+OMP Jacobian - 2 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000899, total gigaflops: 0.000980, gigaflops pr second: 1.089627 
+OMP Jacobian - 1 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.001773, total gigaflops: 0.000980, gigaflops pr second: 0.552730 
+OMP Jacobian - Simpel 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000896, total gigaflops: 0.000980, gigaflops pr second: 1.094292 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000452, total gigaflops: 0.000980, gigaflops pr second: 2.168180 
+ 
+Testing for 2 threads and 50 size
+N: 50 
+OMP Jacobian - 3 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.142486, total gigaflops: 0.601250, gigaflops pr second: 4.219704 
+OMP Jacobian - 2 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.153209, total gigaflops: 0.601250, gigaflops pr second: 3.924388 
+OMP Jacobian - 1 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.193740, total gigaflops: 0.601250, gigaflops pr second: 3.103385 
+OMP Jacobian - Simpel 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.142410, total gigaflops: 0.601250, gigaflops pr second: 4.221980 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.273263, total gigaflops: 0.601250, gigaflops pr second: 2.200260 
+ 
+Testing for 2 threads and 100 size
+N: 100 
+OMP Jacobian - 3 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.863350, total gigaflops: 3.780000, gigaflops pr second: 4.378292 
+OMP Jacobian - 2 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.917390, total gigaflops: 3.780000, gigaflops pr second: 4.120387 
+OMP Jacobian - 1 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.160494, total gigaflops: 3.780000, gigaflops pr second: 3.257234 
+OMP Jacobian - Simpel 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.868483, total gigaflops: 3.780000, gigaflops pr second: 4.352417 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.707786, total gigaflops: 3.780000, gigaflops pr second: 2.213392 
+ 
+Testing for 2 threads and 150 size
+N: 150 
+OMP Jacobian - 3 
+last iter 298 
+iter: 298, mse: 0.009993, time: 2.484452, total gigaflops: 10.057500, gigaflops pr second: 4.048176 
+OMP Jacobian - 2 
+last iter 298 
+iter: 298, mse: 0.009993, time: 2.479644, total gigaflops: 10.057500, gigaflops pr second: 4.056026 
+OMP Jacobian - 1 
+last iter 298 
+iter: 298, mse: 0.009993, time: 3.286777, total gigaflops: 10.057500, gigaflops pr second: 3.059988 
+OMP Jacobian - Simpel 
+last iter 298 
+iter: 298, mse: 0.009993, time: 2.442345, total gigaflops: 10.057500, gigaflops pr second: 4.117968 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.639849, total gigaflops: 10.057500, gigaflops pr second: 1.783292 
+ 
+Testing for 2 threads and 200 size
+N: 200 
+OMP Jacobian - 3 
+last iter 249 
+iter: 249, mse: 0.009986, time: 5.923335, total gigaflops: 19.920000, gigaflops pr second: 3.362970 
+OMP Jacobian - 2 
+last iter 249 
+iter: 249, mse: 0.009986, time: 5.608925, total gigaflops: 19.920000, gigaflops pr second: 3.551483 
+OMP Jacobian - 1 
+last iter 249 
+iter: 249, mse: 0.009986, time: 6.982622, total gigaflops: 19.920000, gigaflops pr second: 2.852796 
+OMP Jacobian - Simpel 
+last iter 249 
+iter: 249, mse: 0.009986, time: 5.767479, total gigaflops: 19.920000, gigaflops pr second: 3.453849 
+last iter 249 
+iter: 249, mse: 0.009986, time: 11.469620, total gigaflops: 19.920000, gigaflops pr second: 1.736762 
+ 
+Testing for 2 threads and 250 size
+N: 250 
+OMP Jacobian - 3 
+last iter 216 
+iter: 216, mse: 0.009977, time: 9.941112, total gigaflops: 33.750000, gigaflops pr second: 3.394992 
+OMP Jacobian - 2 
+last iter 216 
+iter: 216, mse: 0.009977, time: 9.623119, total gigaflops: 33.750000, gigaflops pr second: 3.507179 
+OMP Jacobian - 1 
+last iter 216 
+iter: 216, mse: 0.009977, time: 11.627138, total gigaflops: 33.750000, gigaflops pr second: 2.902692 
+OMP Jacobian - Simpel 
+last iter 216 
+iter: 216, mse: 0.009977, time: 9.754344, total gigaflops: 33.750000, gigaflops pr second: 3.459997 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.268497, total gigaflops: 33.750000, gigaflops pr second: 1.751564 
+ 
+Testing for 2 threads and 300 size
+N: 300 
+OMP Jacobian - 3 
+last iter 192 
+iter: 192, mse: 0.009972, time: 14.545708, total gigaflops: 51.840000, gigaflops pr second: 3.563938 
+OMP Jacobian - 2 
+last iter 192 
+iter: 192, mse: 0.009972, time: 14.498613, total gigaflops: 51.840000, gigaflops pr second: 3.575514 
+OMP Jacobian - 1 
+last iter 192 
+iter: 192, mse: 0.009972, time: 16.455016, total gigaflops: 51.840000, gigaflops pr second: 3.150407 
+OMP Jacobian - Simpel 
+last iter 192 
+iter: 192, mse: 0.009972, time: 14.432318, total gigaflops: 51.840000, gigaflops pr second: 3.591939 
+last iter 192 
+iter: 192, mse: 0.009972, time: 28.473099, total gigaflops: 51.840000, gigaflops pr second: 1.820666 
+ 
+Testing for 4 threads and 10 size
+N: 10 
+OMP Jacobian - 3 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000877, total gigaflops: 0.000980, gigaflops pr second: 1.116926 
+OMP Jacobian - 2 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000850, total gigaflops: 0.000980, gigaflops pr second: 1.153138 
+OMP Jacobian - 1 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.001334, total gigaflops: 0.000980, gigaflops pr second: 0.734780 
+OMP Jacobian - Simpel 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000870, total gigaflops: 0.000980, gigaflops pr second: 1.125826 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000448, total gigaflops: 0.000980, gigaflops pr second: 2.187827 
+ 
+Testing for 4 threads and 50 size
+N: 50 
+OMP Jacobian - 3 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.075727, total gigaflops: 0.601250, gigaflops pr second: 7.939729 
+OMP Jacobian - 2 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.078827, total gigaflops: 0.601250, gigaflops pr second: 7.627459 
+OMP Jacobian - 1 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.109315, total gigaflops: 0.601250, gigaflops pr second: 5.500164 
+OMP Jacobian - Simpel 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.074942, total gigaflops: 0.601250, gigaflops pr second: 8.022855 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.271983, total gigaflops: 0.601250, gigaflops pr second: 2.210617 
+ 
+Testing for 4 threads and 100 size
+N: 100 
+OMP Jacobian - 3 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.435806, total gigaflops: 3.780000, gigaflops pr second: 8.673577 
+OMP Jacobian - 2 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.459026, total gigaflops: 3.780000, gigaflops pr second: 8.234832 
+OMP Jacobian - 1 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.600727, total gigaflops: 3.780000, gigaflops pr second: 6.292371 
+OMP Jacobian - Simpel 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.436766, total gigaflops: 3.780000, gigaflops pr second: 8.654524 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.708673, total gigaflops: 3.780000, gigaflops pr second: 2.212242 
+ 
+Testing for 4 threads and 150 size
+N: 150 
+OMP Jacobian - 3 
+last iter 298 
+iter: 298, mse: 0.009993, time: 1.305081, total gigaflops: 10.057500, gigaflops pr second: 7.706420 
+OMP Jacobian - 2 
+last iter 298 
+iter: 298, mse: 0.009993, time: 1.264872, total gigaflops: 10.057500, gigaflops pr second: 7.951395 
+OMP Jacobian - 1 
+last iter 298 
+iter: 298, mse: 0.009993, time: 1.931477, total gigaflops: 10.057500, gigaflops pr second: 5.207154 
+OMP Jacobian - Simpel 
+last iter 298 
+iter: 298, mse: 0.009993, time: 1.258660, total gigaflops: 10.057500, gigaflops pr second: 7.990642 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.630280, total gigaflops: 10.057500, gigaflops pr second: 1.786323 
+ 
+Testing for 4 threads and 200 size
+N: 200 
+OMP Jacobian - 3 
+last iter 249 
+iter: 249, mse: 0.009986, time: 3.119865, total gigaflops: 19.920000, gigaflops pr second: 6.384892 
+OMP Jacobian - 2 
+last iter 249 
+iter: 249, mse: 0.009986, time: 2.886157, total gigaflops: 19.920000, gigaflops pr second: 6.901913 
+OMP Jacobian - 1 
+last iter 249 
+iter: 249, mse: 0.009986, time: 3.938150, total gigaflops: 19.920000, gigaflops pr second: 5.058212 
+OMP Jacobian - Simpel 
+last iter 249 
+iter: 249, mse: 0.009986, time: 2.991610, total gigaflops: 19.920000, gigaflops pr second: 6.658622 
+last iter 249 
+iter: 249, mse: 0.009986, time: 11.562263, total gigaflops: 19.920000, gigaflops pr second: 1.722846 
+ 
+Testing for 4 threads and 250 size
+N: 250 
+OMP Jacobian - 3 
+last iter 216 
+iter: 216, mse: 0.009977, time: 5.234322, total gigaflops: 33.750000, gigaflops pr second: 6.447826 
+OMP Jacobian - 2 
+last iter 216 
+iter: 216, mse: 0.009977, time: 4.962905, total gigaflops: 33.750000, gigaflops pr second: 6.800452 
+OMP Jacobian - 1 
+last iter 216 
+iter: 216, mse: 0.009977, time: 6.480017, total gigaflops: 33.750000, gigaflops pr second: 5.208320 
+OMP Jacobian - Simpel 
+last iter 216 
+iter: 216, mse: 0.009977, time: 5.081208, total gigaflops: 33.750000, gigaflops pr second: 6.642121 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.288335, total gigaflops: 33.750000, gigaflops pr second: 1.749762 
+ 
+Testing for 4 threads and 300 size
+N: 300 
+OMP Jacobian - 3 
+last iter 192 
+iter: 192, mse: 0.009972, time: 7.525784, total gigaflops: 51.840000, gigaflops pr second: 6.888319 
+OMP Jacobian - 2 
+last iter 192 
+iter: 192, mse: 0.009972, time: 7.475479, total gigaflops: 51.840000, gigaflops pr second: 6.934672 
+OMP Jacobian - 1 
+last iter 192 
+iter: 192, mse: 0.009972, time: 9.461000, total gigaflops: 51.840000, gigaflops pr second: 5.479336 
+OMP Jacobian - Simpel 
+last iter 192 
+iter: 192, mse: 0.009972, time: 7.392393, total gigaflops: 51.840000, gigaflops pr second: 7.012615 
+last iter 192 
+iter: 192, mse: 0.009972, time: 28.457403, total gigaflops: 51.840000, gigaflops pr second: 1.821670 
+ 
+Testing for 8 threads and 10 size
+N: 10 
+OMP Jacobian - 3 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.001127, total gigaflops: 0.000980, gigaflops pr second: 0.869544 
+OMP Jacobian - 2 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.001157, total gigaflops: 0.000980, gigaflops pr second: 0.846900 
+OMP Jacobian - 1 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.001538, total gigaflops: 0.000980, gigaflops pr second: 0.637050 
+OMP Jacobian - Simpel 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.001215, total gigaflops: 0.000980, gigaflops pr second: 0.806538 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000447, total gigaflops: 0.000980, gigaflops pr second: 2.191389 
+ 
+Testing for 8 threads and 50 size
+N: 50 
+OMP Jacobian - 3 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.047184, total gigaflops: 0.601250, gigaflops pr second: 12.742580 
+OMP Jacobian - 2 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.045670, total gigaflops: 0.601250, gigaflops pr second: 13.165165 
+OMP Jacobian - 1 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.066983, total gigaflops: 0.601250, gigaflops pr second: 8.976116 
+OMP Jacobian - Simpel 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.047126, total gigaflops: 0.601250, gigaflops pr second: 12.758431 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.275945, total gigaflops: 0.601250, gigaflops pr second: 2.178877 
+ 
+Testing for 8 threads and 100 size
+N: 100 
+OMP Jacobian - 3 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.232843, total gigaflops: 3.780000, gigaflops pr second: 16.234108 
+OMP Jacobian - 2 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.238154, total gigaflops: 3.780000, gigaflops pr second: 15.872053 
+OMP Jacobian - 1 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.364628, total gigaflops: 3.780000, gigaflops pr second: 10.366724 
+OMP Jacobian - Simpel 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.237897, total gigaflops: 3.780000, gigaflops pr second: 15.889260 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.704687, total gigaflops: 3.780000, gigaflops pr second: 2.217416 
+ 
+Testing for 8 threads and 150 size
+N: 150 
+OMP Jacobian - 3 
+last iter 298 
+iter: 298, mse: 0.009993, time: 0.682513, total gigaflops: 10.057500, gigaflops pr second: 14.735984 
+OMP Jacobian - 2 
+last iter 298 
+iter: 298, mse: 0.009993, time: 0.668018, total gigaflops: 10.057500, gigaflops pr second: 15.055731 
+OMP Jacobian - 1 
+last iter 298 
+iter: 298, mse: 0.009993, time: 1.291773, total gigaflops: 10.057500, gigaflops pr second: 7.785813 
+OMP Jacobian - Simpel 
+last iter 298 
+iter: 298, mse: 0.009993, time: 0.660316, total gigaflops: 10.057500, gigaflops pr second: 15.231353 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.632151, total gigaflops: 10.057500, gigaflops pr second: 1.785730 
+ 
+Testing for 8 threads and 200 size
+N: 200 
+OMP Jacobian - 3 
+last iter 249 
+iter: 249, mse: 0.009986, time: 1.902944, total gigaflops: 19.920000, gigaflops pr second: 10.467993 
+OMP Jacobian - 2 
+last iter 249 
+iter: 249, mse: 0.009986, time: 1.553552, total gigaflops: 19.920000, gigaflops pr second: 12.822227 
+OMP Jacobian - 1 
+last iter 249 
+iter: 249, mse: 0.009986, time: 2.707024, total gigaflops: 19.920000, gigaflops pr second: 7.358635 
+OMP Jacobian - Simpel 
+last iter 249 
+iter: 249, mse: 0.009986, time: 1.641984, total gigaflops: 19.920000, gigaflops pr second: 12.131667 
+last iter 249 
+iter: 249, mse: 0.009986, time: 12.152900, total gigaflops: 19.920000, gigaflops pr second: 1.639115 
+ 
+Testing for 8 threads and 250 size
+N: 250 
+OMP Jacobian - 3 
+last iter 216 
+iter: 216, mse: 0.009977, time: 3.023766, total gigaflops: 33.750000, gigaflops pr second: 11.161579 
+OMP Jacobian - 2 
+last iter 216 
+iter: 216, mse: 0.009977, time: 2.671023, total gigaflops: 33.750000, gigaflops pr second: 12.635607 
+OMP Jacobian - 1 
+last iter 216 
+iter: 216, mse: 0.009977, time: 4.421055, total gigaflops: 33.750000, gigaflops pr second: 7.633924 
+OMP Jacobian - Simpel 
+last iter 216 
+iter: 216, mse: 0.009977, time: 2.764756, total gigaflops: 33.750000, gigaflops pr second: 12.207227 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.301654, total gigaflops: 33.750000, gigaflops pr second: 1.748555 
+ 
+Testing for 8 threads and 300 size
+N: 300 
+OMP Jacobian - 3 
+last iter 192 
+iter: 192, mse: 0.009972, time: 4.268351, total gigaflops: 51.840000, gigaflops pr second: 12.145205 
+OMP Jacobian - 2 
+last iter 192 
+iter: 192, mse: 0.009972, time: 4.003482, total gigaflops: 51.840000, gigaflops pr second: 12.948728 
+OMP Jacobian - 1 
+last iter 192 
+iter: 192, mse: 0.009972, time: 6.620755, total gigaflops: 51.840000, gigaflops pr second: 7.829923 
+OMP Jacobian - Simpel 
+last iter 192 
+iter: 192, mse: 0.009972, time: 3.994061, total gigaflops: 51.840000, gigaflops pr second: 12.979271 
+last iter 192 
+iter: 192, mse: 0.009972, time: 28.593290, total gigaflops: 51.840000, gigaflops pr second: 1.813013 
+ 
+Testing for 16 threads and 10 size
+N: 10 
+OMP Jacobian - 3 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.025502, total gigaflops: 0.000980, gigaflops pr second: 0.038429 
+OMP Jacobian - 2 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.001709, total gigaflops: 0.000980, gigaflops pr second: 0.573440 
+OMP Jacobian - 1 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.002256, total gigaflops: 0.000980, gigaflops pr second: 0.434411 
+OMP Jacobian - Simpel 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.001540, total gigaflops: 0.000980, gigaflops pr second: 0.636264 
+last iter 98 
+iter: 98, mse: 0.009874, time: 0.000452, total gigaflops: 0.000980, gigaflops pr second: 2.167140 
+ 
+Testing for 16 threads and 50 size
+N: 50 
+OMP Jacobian - 3 
+last iter 481 
+iter: 481, mse: 0.009994, time: 1.682968, total gigaflops: 0.601250, gigaflops pr second: 0.357256 
+OMP Jacobian - 2 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.027593, total gigaflops: 0.601250, gigaflops pr second: 21.789625 
+OMP Jacobian - 1 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.044180, total gigaflops: 0.601250, gigaflops pr second: 13.609199 
+OMP Jacobian - Simpel 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.027742, total gigaflops: 0.601250, gigaflops pr second: 21.673012 
+last iter 481 
+iter: 481, mse: 0.009994, time: 0.272927, total gigaflops: 0.601250, gigaflops pr second: 2.202970 
+ 
+Testing for 16 threads and 100 size
+N: 100 
+OMP Jacobian - 3 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.135014, total gigaflops: 3.780000, gigaflops pr second: 27.997036 
+OMP Jacobian - 2 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.128064, total gigaflops: 3.780000, gigaflops pr second: 29.516555 
+OMP Jacobian - 1 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.233927, total gigaflops: 3.780000, gigaflops pr second: 16.158900 
+OMP Jacobian - Simpel 
+last iter 378 
+iter: 378, mse: 0.009983, time: 0.134436, total gigaflops: 3.780000, gigaflops pr second: 28.117541 
+last iter 378 
+iter: 378, mse: 0.009983, time: 1.706442, total gigaflops: 3.780000, gigaflops pr second: 2.215135 
+ 
+Testing for 16 threads and 150 size
+N: 150 
+OMP Jacobian - 3 
+last iter 298 
+iter: 298, mse: 0.009993, time: 0.640235, total gigaflops: 10.057500, gigaflops pr second: 15.709083 
+OMP Jacobian - 2 
+last iter 298 
+iter: 298, mse: 0.009993, time: 0.611109, total gigaflops: 10.057500, gigaflops pr second: 16.457789 
+OMP Jacobian - 1 
+last iter 298 
+iter: 298, mse: 0.009993, time: 0.992629, total gigaflops: 10.057500, gigaflops pr second: 10.132181 
+OMP Jacobian - Simpel 
+last iter 298 
+iter: 298, mse: 0.009993, time: 0.639801, total gigaflops: 10.057500, gigaflops pr second: 15.719720 
+last iter 298 
+iter: 298, mse: 0.009993, time: 5.613830, total gigaflops: 10.057500, gigaflops pr second: 1.791558 
+ 
+Testing for 16 threads and 200 size
+N: 200 
+OMP Jacobian - 3 
+last iter 249 
+iter: 249, mse: 0.009986, time: 1.803179, total gigaflops: 19.920000, gigaflops pr second: 11.047155 
+OMP Jacobian - 2 
+last iter 249 
+iter: 249, mse: 0.009986, time: 1.587037, total gigaflops: 19.920000, gigaflops pr second: 12.551696 
+OMP Jacobian - 1 
+last iter 249 
+iter: 249, mse: 0.009986, time: 2.197512, total gigaflops: 19.920000, gigaflops pr second: 9.064795 
+OMP Jacobian - Simpel 
+last iter 249 
+iter: 249, mse: 0.009986, time: 1.635499, total gigaflops: 19.920000, gigaflops pr second: 12.179769 
+last iter 249 
+iter: 249, mse: 0.009986, time: 11.443280, total gigaflops: 19.920000, gigaflops pr second: 1.740760 
+ 
+Testing for 16 threads and 250 size
+N: 250 
+OMP Jacobian - 3 
+last iter 216 
+iter: 216, mse: 0.009977, time: 3.055196, total gigaflops: 33.750000, gigaflops pr second: 11.046754 
+OMP Jacobian - 2 
+last iter 216 
+iter: 216, mse: 0.009977, time: 3.416835, total gigaflops: 33.750000, gigaflops pr second: 9.877561 
+OMP Jacobian - 1 
+last iter 216 
+iter: 216, mse: 0.009977, time: 4.010958, total gigaflops: 33.750000, gigaflops pr second: 8.414449 
+OMP Jacobian - Simpel 
+last iter 216 
+iter: 216, mse: 0.009977, time: 3.185372, total gigaflops: 33.750000, gigaflops pr second: 10.595309 
+last iter 216 
+iter: 216, mse: 0.009977, time: 19.389557, total gigaflops: 33.750000, gigaflops pr second: 1.740628 
+ 
+Testing for 16 threads and 300 size
+N: 300 
+OMP Jacobian - 3 
+last iter 192 
+iter: 192, mse: 0.009972, time: 5.156097, total gigaflops: 51.840000, gigaflops pr second: 10.054117 
+OMP Jacobian - 2 
+last iter 192 
+iter: 192, mse: 0.009972, time: 4.533311, total gigaflops: 51.840000, gigaflops pr second: 11.435350 
+OMP Jacobian - 1 
+last iter 192 
+iter: 192, mse: 0.009972, time: 6.140180, total gigaflops: 51.840000, gigaflops pr second: 8.442750 
+OMP Jacobian - Simpel 
+last iter 192 
+iter: 192, mse: 0.009972, time: 4.948041, total gigaflops: 51.840000, gigaflops pr second: 10.476874 
+last iter 192 
+iter: 192, mse: 0.009972, time: 29.052797, total gigaflops: 51.840000, gigaflops pr second: 1.784338 
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15178732: <jacobian> in cluster <dcc> Done
+
+Job <jacobian> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Fri Jan 13 11:56:46 2023
+Job was executed on host(s) <16*n-62-21-4>, in queue <hpcintro>, as user <s183997> in cluster <dcc> at Fri Jan 13 12:05:18 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment2/Poisson3D> was used as the working directory.
+Started at Fri Jan 13 12:05:18 2023
+Terminated at Fri Jan 13 12:20:41 2023
+Results reported at Fri Jan 13 12:20:41 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J jacobian
+#BSUB -o jacobian%J.out
+#BSUB -q hpcintro
+#BSUB -n 16
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -W 60
+#BSUB -R "span[hosts=1]"
+
+for nt in 1 2 4 8 16; do
+    for size in 10 50 100 150 200 250 300; do
+        echo " "
+        echo "Testing for $nt threads and $size size"
+        OMP_NUM_THREADS=$nt
+        ./poisson_j $size 1000 0.01 0.0
+    done
+done
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   2259.93 sec.
+    Max Memory :                                 1269 MB
+    Average Memory :                             810.89 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               129803.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                20
+    Run time :                                   923 sec.
+    Turnaround time :                            1435 sec.
+
+The output (if any) is above this job summary.
+

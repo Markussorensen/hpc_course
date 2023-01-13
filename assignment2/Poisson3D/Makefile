@@ -14,14 +14,14 @@ OBJS_GS	= $(MAIN_GS) gauss_seidel.o
 #
 CC	= gcc
 DEFS	= 
-OPT	= -g 
+OPT	= -g -O3 -funroll-loops 
 IPO	= 
 ISA	= 
 CHIP	= 
 ARCH	= 
-PARA	= 
+PARA	= -fopenmp
 CFLAGS	= $(DEFS) $(ARCH) $(OPT) $(ISA) $(CHIP) $(IPO) $(PARA) $(XOPTS)
-LDFLAGS = -lm 
+LDFLAGS = -lm
 
 all: $(TARGET_J) $(TARGET_GS) 
 

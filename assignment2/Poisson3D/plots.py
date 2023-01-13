@@ -302,21 +302,23 @@ with open("assignment2/Poisson3D/jacobian15181894.out", "r") as f:
             jacobian_threads_time_nocompiler[method_idx, thread_idx, size_idx] = float(linearray[5].split(",")[0])
             jacobian_threads_gbits_nocompiler[method_idx, thread_idx, size_idx] = float(linearray[12].split(",")[0])
 
-#Jacobian size vs time
+#Jacobian compare nocompiler with compiler
 sizes = [10, 50, 100, 150, 200, 250, 300]
 for i in range(len(sizes)):
-    jacobian_normal_time = jacobian_threads_time_nocompiler[0,:,i]
-    jacobian_simpel_time = jacobian_threads_time_nocompiler[1,:,i]
-
     plt.figure()
-    plt.plot(threads, jacobian_normal_time, c="red", label="Jacobi sequential")
-    plt.plot(threads, jacobian_simpel_time, c="blue", label="Jacobi omp")
-    plt.scatter(threads, jacobian_normal_time, c="red")
-    plt.scatter(threads, jacobian_simpel_time, c="blue")
+    plt.plot(threads, jacobian_threads_time_nocompiler[0,:,i], c="red", label="Sequential, no optimization")
+    plt.scatter(threads, jacobian_threads_time_nocompiler[0,:,i], c="red", alpha=0.5)
+    plt.plot(threads, jacobian_threads_time[0,:,i], c="orange", label="Sequential, with optimization")
+    plt.scatter(threads, jacobian_threads_time[0,:,i], c="orange", alpha=0.5)
+    plt.plot(threads, jacobian_threads_time_nocompiler[1,:,i], c="blue", label="OMP, no optimization")
+    plt.scatter(threads, jacobian_threads_time_nocompiler[1,:,i], c="blue", alpha=0.5)
+    plt.plot(threads, jacobian_threads_time[1,:,i], c="green", label="OMP, with optimization")
+    plt.scatter(threads, jacobian_threads_time[1,:,i], c="green", alpha=0.5)
+    plt.xticks(threads)
     plt.xlabel("Threads")
     plt.ylabel("Time (s)")
     plt.title("N = " + str(sizes[i]))
     plt.legend()
-    plt.savefig("assignment2/Poisson3D/jacobian_threads_normal_simpel_nocompiler_" + str(sizes[i]) + ".png")
+    plt.savefig("assignment2/Poisson3D/jacobian_normal_omp_simpel_time_nocompiler_" + str(sizes[i]) + ".png")
     plt.close()
 

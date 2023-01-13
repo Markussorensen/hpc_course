@@ -177,3 +177,33 @@ plt.xlabel("$N$")
 plt.ylabel("Time (s)")
 plt.legend()
 plt.savefig("assignment2/Poisson3D/jacobian_size_normal.png")
+
+#Jacobian and gauss size vs time
+sizes = [10, 50, 100, 150, 200, 250, 300]
+jacobian_normal_time = jacobian_threads_time[0,0,:]
+gauss_normal_time = gauss_threads_time[0,0,:]
+
+plt.figure()
+plt.plot(sizes, jacobian_normal_time, c="red", label="Jacobi")
+plt.plot(sizes, gauss_normal_time, c="blue", label="Gauss-Seidel")
+plt.scatter(sizes, jacobian_normal_time, c="red")
+plt.scatter(sizes, gauss_normal_time, c="blue")
+plt.xlabel("$N$")
+plt.ylabel("Time (s)")
+plt.legend()
+plt.savefig("assignment2/Poisson3D/jacobian_gauss_size_time_normal.png")
+
+#Jacobian and gauss size vs Gbits
+sizes = [10, 50, 100, 150, 200, 250, 300]
+jacobian_normal_gbits = jacobian_threads_gbits[0,0,:]
+gauss_normal_gbits = gauss_threads_gbits[0,0,:]
+
+plt.figure()
+plt.plot(sizes, jacobian_normal_gbits*1000, c="red", label="Jacobi")
+plt.plot(sizes, gauss_normal_gbits*1000, c="blue", label="Gauss-Seidel")
+plt.scatter(sizes, jacobian_normal_gbits*1000, c="red")
+plt.scatter(sizes, gauss_normal_gbits*1000, c="blue")
+plt.xlabel("$N$")
+plt.ylabel("MFLOPS pr. Second")
+plt.legend()
+plt.savefig("assignment2/Poisson3D/jacobian_gauss_size_gbits_normal.png")

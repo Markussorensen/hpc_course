@@ -112,7 +112,7 @@ main(int argc, char *argv[]) {
         perror("array u: allocation failed");
         exit(-1);
     }
-    // printf("Normal Jacobian \n");
+    printf("Normal Jacobian \n");
     init_u(u_new, N, start_T);
     jacobi(u, f, u_new, N, iter_max, tolerance);
     free_3d(u_new);

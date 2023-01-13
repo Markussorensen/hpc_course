@@ -22,6 +22,7 @@ for i in range(1,len(sizes)):
     plt.plot(np.log(jacobian_data_arrays[i]), label="N = " + str(sizes[i]))
 plt.xlabel("Iteration")
 plt.ylabel("Log mean squared iteration difference")
+plt.hlines(np.log(0.01), 0, 500, color="black", linestyles="dashed", label="Threshold = log(0.01)", alpha=0.2)
 plt.legend()
 plt.savefig("assignment2/Poisson3D/jacobian_basic.png")
 
@@ -51,6 +52,7 @@ for i in range(1,len(sizes)):
     plt.plot(np.log(gauss_data_arrays[i]), label="N = " + str(sizes[i]))
 plt.xlabel("Iteration")
 plt.ylabel("Log mean squared iteration difference")
+plt.hlines(np.log(0.01), 0, 500, color="black", linestyles="dashed", label="Threshold = log(0.01)", alpha=0.2)
 plt.legend()
 plt.savefig("assignment2/Poisson3D/gauss_basic.png")
 
@@ -61,6 +63,7 @@ plt.plot(np.log(gauss_data_arrays[3]), c="lightsalmon", label="Gauss-Seidel, N =
 plt.plot(np.log(jacobian_data_arrays[3]), c="lightblue", label="Jacobian, N = 150")
 plt.plot(np.log(gauss_data_arrays[6]), c="salmon", label="Gauss-Seidel, N = 300")
 plt.plot(np.log(jacobian_data_arrays[6]), c="skyblue", label="Jacobian, N = 300")
+plt.hlines(np.log(0.01), 0, 500, color="black", linestyles="dashed", label="Threshold = log(0.01)", alpha=0.2)
 plt.xlabel("Iteration")
 plt.ylabel("Log mean squared iteration difference")
 plt.legend()

@@ -5,29 +5,43 @@
 #include <stdlib.h>
 #include "alloc3d.h"
 #include "print.h"
+#include "utils.h"
+#include <omp.h>
 
 #ifdef _JACOBI
 #include "jacobi.h"
 #endif
 
-#ifdef _GAUSS_SEIDEL
-#include "gauss_seidel.h"
+#ifdef _JACOBI_OMP
+#include "jacobi_omp.h"
+#endif
+
+#ifdef _JACOBI_MAP
+#include "jacobi_map.h"
+#endif
+
+#ifdef _JACOBI_TARGET
+#include "jacobi_target.h"
 #endif
 
 #define N_DEFAULT 100
+#define TOLERANCE_DEFAULT 1e-6
+#define ITER_MAX_DEFAULT 1000
+#define START_T_DEFAULT 0.0
 
 int
 main(int argc, char *argv[]) {
 
     int 	N = N_DEFAULT;
-    int 	iter_max = 1000;
-    double	tolerance;
-    double	start_T;
+    int 	iter_max = ITER_MAX_DEFAULT;
+    double	tolerance = TOLERANCE_DEFAULT;
+    double	start_T = START_T_DEFAULT;
     int		output_type = 0;
     char	*output_prefix = "poisson_res";
     char        *output_ext    = "";
     char	output_filename[FILENAME_MAX];
     double 	***u = NULL;
+    double  ***f = NULL;
 
 
     /* get the paramters from the command line */
@@ -44,15 +58,32 @@ main(int argc, char *argv[]) {
         perror("array u: allocation failed");
         exit(-1);
     }
+    if ( (f = malloc_3d(N, N, N)) == NULL ) {
+        perror("array f: allocation failed");
+        exit(-1);
+    }
 
-    /*
-     *
-     * fill in your code here 
-     *
-     *
-     */
+    // initialize u and f
+    init_u(N, u, start_T);
+    init_f(N, f);
 
-    // dump  results if wanted 
+    // solve the Poisson problem
+    #ifdef _JACOBI
+    jacobi(N, iter_max, tolerance, u, f);
+    #endif
+
+    #ifdef _JACOBI_OMP
+    jacobi_omp(N, iter_max, tolerance, u, f);
+    #endif
+
+    #ifdef _JACOBI_MAP
+    jacobi_map(N, iter_max, tolerance, u, f);
+    #endif
+
+    #ifdef _JACOBI_TARGET
+    jacobi_target(N, iter_max, tolerance, u, f);
+    #endif
+ 
     switch(output_type) {
 	case 0:
 	    // no output at all
@@ -76,6 +107,7 @@ main(int argc, char *argv[]) {
 
     // de-allocate memory
     free_3d(u);
+    free_3d(f);
 
     return(0);
 }

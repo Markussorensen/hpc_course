@@ -15,7 +15,22 @@
 void matmult_asy_offload(int M, int N, int K, double **A, double **B, double **C) {
     double warmup = 1.0;
     const int num_slabs = 16;
-    double t1, t2, t3, t4;
+    double t1, t2;
+    int teams, threads;
+
+    char* teams_env = getenv("TEAMS");
+    if (teams_env != NULL) {
+        teams = atoi(teams_env);
+    } else {
+        teams = _TEAMS;
+    }
+
+    char* threads_env = getenv("THREADS");
+    if (threads_env != NULL) {
+        threads = atoi(threads_env);
+    } else {
+        threads = _THREADS;
+    }
 
     #pragma omp target data map(tofrom: warmup)
     {
@@ -38,7 +53,7 @@ void matmult_asy_offload(int M, int N, int K, double **A, double **B, double **C
         int m_start = slab * slab_size;
         int m_end = m_start + slab_size;
         #pragma omp target update to(A[m_start:slab_size][0:K]) depend(out: A) nowait
-        #pragma omp target teams distribute parallel for collapse(2) nowait depend(in: A) depend(out: C) num_teams(_TEAMS) thread_limit(_THREADS)
+        #pragma omp target teams distribute parallel for collapse(2) nowait depend(in: A) depend(out: C) num_teams(teams) thread_limit(threads)
         for (int m = m_start; m < m_end; m++) {
             for (int n = 0; n < N; n++) {
                 for (int k = 0; k < K; k++) {

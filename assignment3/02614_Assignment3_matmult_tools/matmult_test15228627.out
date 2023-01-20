@@ -1,0 +1,547 @@
+Loaded module: cuda/11.8
+Loaded module: gcc/11.3.0-binutils-2.38
+
+Testing for team size 1024 and thread count 1
+Using 1024 teams and 1 threads per teamTime with transfers: 33.721911 
+Time without transfers: 33.662927 
+  393216.000   4075.530 19200 # matmult_mnk_offload
+
+Testing for team size 1024 and thread count 2
+Using 1024 teams and 2 threads per teamTime with transfers: 17.748020 
+Time without transfers: 17.689243 
+  393216.000   7743.351 19200 # matmult_mnk_offload
+
+Testing for team size 1024 and thread count 4
+Using 1024 teams and 4 threads per teamTime with transfers: 9.239403 
+Time without transfers: 9.180627 
+  393216.000  14872.993 19200 # matmult_mnk_offload
+
+Testing for team size 1024 and thread count 8
+Using 1024 teams and 8 threads per teamTime with transfers: 4.452990 
+Time without transfers: 4.394330 
+  393216.000  30848.165 19200 # matmult_mnk_offload
+
+Testing for team size 1024 and thread count 16
+Using 1024 teams and 16 threads per teamTime with transfers: 2.207122 
+Time without transfers: 2.148530 
+Using 1024 teams and 16 threads per teamTime with transfers: 2.129521 
+Time without transfers: 2.074338 
+  393216.000  63362.780 19200 # matmult_mnk_offload
+
+Testing for team size 1024 and thread count 32
+Using 1024 teams and 32 threads per teamTime with transfers: 1.154749 
+Time without transfers: 1.096296 
+Using 1024 teams and 32 threads per teamTime with transfers: 1.072110 
+Time without transfers: 1.017001 
+Using 1024 teams and 32 threads per teamTime with transfers: 1.074890 
+Time without transfers: 1.019675 
+  393216.000 124818.946 19200 # matmult_mnk_offload
+
+Testing for team size 1024 and thread count 64
+Using 1024 teams and 64 threads per teamTime with transfers: 0.742906 
+Time without transfers: 0.683993 
+Using 1024 teams and 64 threads per teamTime with transfers: 0.588442 
+Time without transfers: 0.533404 
+Using 1024 teams and 64 threads per teamTime with transfers: 0.588448 
+Time without transfers: 0.533391 
+Using 1024 teams and 64 threads per teamTime with transfers: 0.588445 
+Time without transfers: 0.533355 
+Using 1024 teams and 64 threads per teamTime with transfers: 0.588561 
+Time without transfers: 0.533446 
+  393216.000 221787.449 19200 # matmult_mnk_offload
+
+Testing for team size 2048 and thread count 1
+Using 2048 teams and 1 threads per teamTime with transfers: 19.222781 
+Time without transfers: 19.164032 
+  393216.000   7149.243 19200 # matmult_mnk_offload
+
+Testing for team size 2048 and thread count 2
+Using 2048 teams and 2 threads per teamTime with transfers: 9.610940 
+Time without transfers: 9.552320 
+  393216.000  14298.150 19200 # matmult_mnk_offload
+
+Testing for team size 2048 and thread count 4
+Using 2048 teams and 4 threads per teamTime with transfers: 4.542696 
+Time without transfers: 4.484006 
+  393216.000  30241.826 19200 # matmult_mnk_offload
+
+Testing for team size 2048 and thread count 8
+Using 2048 teams and 8 threads per teamTime with transfers: 2.320362 
+Time without transfers: 2.261487 
+Using 2048 teams and 8 threads per teamTime with transfers: 2.248856 
+Time without transfers: 2.193664 
+  393216.000  60137.331 19200 # matmult_mnk_offload
+
+Testing for team size 2048 and thread count 16
+Using 2048 teams and 16 threads per teamTime with transfers: 1.161668 
+Time without transfers: 1.102919 
+Using 2048 teams and 16 threads per teamTime with transfers: 1.111967 
+Time without transfers: 1.056823 
+Using 2048 teams and 16 threads per teamTime with transfers: 1.113255 
+Time without transfers: 1.058073 
+  393216.000 121658.920 19200 # matmult_mnk_offload
+
+Testing for team size 2048 and thread count 32
+Using 2048 teams and 32 threads per teamTime with transfers: 0.671479 
+Time without transfers: 0.612819 
+Using 2048 teams and 32 threads per teamTime with transfers: 0.594907 
+Time without transfers: 0.539824 
+Using 2048 teams and 32 threads per teamTime with transfers: 0.593997 
+Time without transfers: 0.538929 
+Using 2048 teams and 32 threads per teamTime with transfers: 0.594400 
+Time without transfers: 0.539299 
+Using 2048 teams and 32 threads per teamTime with transfers: 0.594990 
+Time without transfers: 0.539870 
+  393216.000 225199.265 19200 # matmult_mnk_offload
+
+Testing for team size 2048 and thread count 64
+Using 2048 teams and 64 threads per teamTime with transfers: 0.520993 
+Time without transfers: 0.462509 
+Using 2048 teams and 64 threads per teamTime with transfers: 0.476264 
+Time without transfers: 0.421153 
+Using 2048 teams and 64 threads per teamTime with transfers: 0.467087 
+Time without transfers: 0.412005 
+Using 2048 teams and 64 threads per teamTime with transfers: 0.478388 
+Time without transfers: 0.423283 
+Using 2048 teams and 64 threads per teamTime with transfers: 0.478060 
+Time without transfers: 0.422911 
+Using 2048 teams and 64 threads per teamTime with transfers: 0.470897 
+Time without transfers: 0.415757 
+Using 2048 teams and 64 threads per teamTime with transfers: 0.471038 
+Time without transfers: 0.415989 
+  393216.000 285968.203 19200 # matmult_mnk_offload
+
+Testing for team size 4096 and thread count 1
+Using 4096 teams and 1 threads per teamTime with transfers: 17.177853 
+Time without transfers: 17.119288 
+  393216.000   8000.353 19200 # matmult_mnk_offload
+
+Testing for team size 4096 and thread count 2
+Using 4096 teams and 2 threads per teamTime with transfers: 9.209850 
+Time without transfers: 9.151290 
+  393216.000  14921.078 19200 # matmult_mnk_offload
+
+Testing for team size 4096 and thread count 4
+Using 4096 teams and 4 threads per teamTime with transfers: 4.695189 
+Time without transfers: 4.636206 
+  393216.000  29263.117 19200 # matmult_mnk_offload
+
+Testing for team size 4096 and thread count 8
+Using 4096 teams and 8 threads per teamTime with transfers: 2.460570 
+Time without transfers: 2.402058 
+Using 4096 teams and 8 threads per teamTime with transfers: 2.378160 
+Time without transfers: 2.323029 
+  393216.000  56793.420 19200 # matmult_mnk_offload
+
+Testing for team size 4096 and thread count 16
+Using 4096 teams and 16 threads per teamTime with transfers: 1.210269 
+Time without transfers: 1.151718 
+Using 4096 teams and 16 threads per teamTime with transfers: 1.162326 
+Time without transfers: 1.107216 
+Using 4096 teams and 16 threads per teamTime with transfers: 1.172810 
+Time without transfers: 1.117692 
+  393216.000 116230.115 19200 # matmult_mnk_offload
+
+Testing for team size 4096 and thread count 32
+Using 4096 teams and 32 threads per teamTime with transfers: 0.793548 
+Time without transfers: 0.734957 
+Using 4096 teams and 32 threads per teamTime with transfers: 0.624099 
+Time without transfers: 0.568979 
+Using 4096 teams and 32 threads per teamTime with transfers: 0.637949 
+Time without transfers: 0.582804 
+Using 4096 teams and 32 threads per teamTime with transfers: 0.677774 
+Time without transfers: 0.622609 
+Using 4096 teams and 32 threads per teamTime with transfers: 0.712729 
+Time without transfers: 0.657575 
+  393216.000 199319.683 19200 # matmult_mnk_offload
+
+Testing for team size 4096 and thread count 64
+Using 4096 teams and 64 threads per teamTime with transfers: 0.523240 
+Time without transfers: 0.464634 
+Using 4096 teams and 64 threads per teamTime with transfers: 0.472659 
+Time without transfers: 0.417565 
+Using 4096 teams and 64 threads per teamTime with transfers: 0.468568 
+Time without transfers: 0.413469 
+Using 4096 teams and 64 threads per teamTime with transfers: 0.473216 
+Time without transfers: 0.418110 
+Using 4096 teams and 64 threads per teamTime with transfers: 0.477650 
+Time without transfers: 0.422540 
+Using 4096 teams and 64 threads per teamTime with transfers: 0.469763 
+Time without transfers: 0.414664 
+Using 4096 teams and 64 threads per teamTime with transfers: 0.474210 
+Time without transfers: 0.419144 
+  393216.000 286239.024 19200 # matmult_mnk_offload
+
+Testing for team size 8192 and thread count 1
+Using 8192 teams and 1 threads per teamTime with transfers: 14.743292 
+Time without transfers: 14.684600 
+  393216.000   9321.347 19200 # matmult_mnk_offload
+
+Testing for team size 8192 and thread count 2
+Using 8192 teams and 2 threads per teamTime with transfers: 7.405642 
+Time without transfers: 7.347200 
+  393216.000  18555.376 19200 # matmult_mnk_offload
+
+Testing for team size 8192 and thread count 4
+Using 8192 teams and 4 threads per teamTime with transfers: 3.599858 
+Time without transfers: 3.541390 
+  393216.000  38163.902 19200 # matmult_mnk_offload
+
+Testing for team size 8192 and thread count 8
+Using 8192 teams and 8 threads per teamTime with transfers: 1.852228 
+Time without transfers: 1.793720 
+Using 8192 teams and 8 threads per teamTime with transfers: 1.780934 
+Time without transfers: 1.725699 
+  393216.000  75622.788 19200 # matmult_mnk_offload
+
+Testing for team size 8192 and thread count 16
+Using 8192 teams and 16 threads per teamTime with transfers: 1.005330 
+Time without transfers: 0.946392 
+Using 8192 teams and 16 threads per teamTime with transfers: 0.936847 
+Time without transfers: 0.881746 
+Using 8192 teams and 16 threads per teamTime with transfers: 0.905470 
+Time without transfers: 0.850339 
+Using 8192 teams and 16 threads per teamTime with transfers: 0.912890 
+Time without transfers: 0.857738 
+  393216.000 146127.960 19200 # matmult_mnk_offload
+
+Testing for team size 8192 and thread count 32
+Using 8192 teams and 32 threads per teamTime with transfers: 0.620036 
+Time without transfers: 0.561676 
+Using 8192 teams and 32 threads per teamTime with transfers: 0.530798 
+Time without transfers: 0.475734 
+Using 8192 teams and 32 threads per teamTime with transfers: 0.564257 
+Time without transfers: 0.509193 
+Using 8192 teams and 32 threads per teamTime with transfers: 0.554362 
+Time without transfers: 0.499250 
+Using 8192 teams and 32 threads per teamTime with transfers: 0.568824 
+Time without transfers: 0.513729 
+Using 8192 teams and 32 threads per teamTime with transfers: 0.507491 
+Time without transfers: 0.452453 
+  393216.000 246363.729 19200 # matmult_mnk_offload
+
+Testing for team size 8192 and thread count 64
+Using 8192 teams and 64 threads per teamTime with transfers: 0.538709 
+Time without transfers: 0.480127 
+Using 8192 teams and 64 threads per teamTime with transfers: 0.472698 
+Time without transfers: 0.417589 
+Using 8192 teams and 64 threads per teamTime with transfers: 0.473463 
+Time without transfers: 0.418301 
+Using 8192 teams and 64 threads per teamTime with transfers: 0.470646 
+Time without transfers: 0.415571 
+Using 8192 teams and 64 threads per teamTime with transfers: 0.470173 
+Time without transfers: 0.415116 
+Using 8192 teams and 64 threads per teamTime with transfers: 0.471930 
+Time without transfers: 0.416890 
+Using 8192 teams and 64 threads per teamTime with transfers: 0.471189 
+Time without transfers: 0.416099 
+  393216.000 285410.406 19200 # matmult_mnk_offload
+
+Testing for team size 16384 and thread count 1
+Using 16384 teams and 1 threads per teamTime with transfers: 13.165917 
+Time without transfers: 13.107268 
+  393216.000  10438.098 19200 # matmult_mnk_offload
+
+Testing for team size 16384 and thread count 2
+Using 16384 teams and 2 threads per teamTime with transfers: 6.569308 
+Time without transfers: 6.510522 
+  393216.000  20914.738 19200 # matmult_mnk_offload
+
+Testing for team size 16384 and thread count 4
+Using 16384 teams and 4 threads per teamTime with transfers: 3.096302 
+Time without transfers: 3.037348 
+  393216.000  44365.955 19200 # matmult_mnk_offload
+
+Testing for team size 16384 and thread count 8
+Using 16384 teams and 8 threads per teamTime with transfers: 1.627133 
+Time without transfers: 1.568099 
+Using 16384 teams and 8 threads per teamTime with transfers: 1.567329 
+Time without transfers: 1.511882 
+  393216.000  86007.110 19200 # matmult_mnk_offload
+
+Testing for team size 16384 and thread count 16
+Using 16384 teams and 16 threads per teamTime with transfers: 0.880718 
+Time without transfers: 0.822101 
+Using 16384 teams and 16 threads per teamTime with transfers: 0.761012 
+Time without transfers: 0.705891 
+Using 16384 teams and 16 threads per teamTime with transfers: 0.758561 
+Time without transfers: 0.703399 
+Using 16384 teams and 16 threads per teamTime with transfers: 0.834687 
+Time without transfers: 0.779536 
+  393216.000 169850.638 19200 # matmult_mnk_offload
+
+Testing for team size 16384 and thread count 32
+Using 16384 teams and 32 threads per teamTime with transfers: 0.584445 
+Time without transfers: 0.525936 
+Using 16384 teams and 32 threads per teamTime with transfers: 0.484923 
+Time without transfers: 0.429790 
+Using 16384 teams and 32 threads per teamTime with transfers: 0.445270 
+Time without transfers: 0.390089 
+Using 16384 teams and 32 threads per teamTime with transfers: 0.501558 
+Time without transfers: 0.446445 
+Using 16384 teams and 32 threads per teamTime with transfers: 0.504420 
+Time without transfers: 0.449286 
+Using 16384 teams and 32 threads per teamTime with transfers: 0.476933 
+Time without transfers: 0.421812 
+Using 16384 teams and 32 threads per teamTime with transfers: 0.509424 
+Time without transfers: 0.454361 
+  393216.000 274183.636 19200 # matmult_mnk_offload
+
+Testing for team size 16384 and thread count 64
+Using 16384 teams and 64 threads per teamTime with transfers: 0.544946 
+Time without transfers: 0.486362 
+Using 16384 teams and 64 threads per teamTime with transfers: 0.472493 
+Time without transfers: 0.417423 
+Using 16384 teams and 64 threads per teamTime with transfers: 0.472954 
+Time without transfers: 0.417926 
+Using 16384 teams and 64 threads per teamTime with transfers: 0.473215 
+Time without transfers: 0.418146 
+Using 16384 teams and 64 threads per teamTime with transfers: 0.472208 
+Time without transfers: 0.417098 
+Using 16384 teams and 64 threads per teamTime with transfers: 0.470936 
+Time without transfers: 0.415822 
+Using 16384 teams and 64 threads per teamTime with transfers: 0.474859 
+Time without transfers: 0.419808 
+  393216.000 284314.928 19200 # matmult_mnk_offload
+
+Testing for team size 1024 and thread count 1
+Time with transfers: 12.993078 
+Time without transfers: 12.934479 
+  393216.000  10576.685 19200 # matmult_mkn_offload
+
+Testing for team size 1024 and thread count 2
+Time with transfers: 6.944652 
+Time without transfers: 6.886037 
+  393216.000  19787.024 19200 # matmult_mkn_offload
+
+Testing for team size 1024 and thread count 4
+Time with transfers: 3.925168 
+Time without transfers: 3.866582 
+  393216.000  35002.404 19200 # matmult_mkn_offload
+
+Testing for team size 1024 and thread count 8
+Time with transfers: 4.099511 
+Time without transfers: 4.041118 
+  393216.000  33513.804 19200 # matmult_mkn_offload
+
+Testing for team size 1024 and thread count 16
+Time with transfers: 4.736181 
+Time without transfers: 4.677572 
+  393216.000  29008.752 19200 # matmult_mkn_offload
+
+Testing for team size 1024 and thread count 32
+Time with transfers: 5.991380 
+Time without transfers: 5.932700 
+  393216.000  22931.891 19200 # matmult_mkn_offload
+
+Testing for team size 1024 and thread count 64
+Time with transfers: 7.247140 
+Time without transfers: 7.188412 
+  393216.000  18960.796 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 1
+Time with transfers: 7.697381 
+Time without transfers: 7.638705 
+  393216.000  17851.901 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 2
+Time with transfers: 4.193419 
+Time without transfers: 4.134902 
+  393216.000  32762.083 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 4
+Time with transfers: 3.915034 
+Time without transfers: 3.855750 
+  393216.000  35088.818 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 8
+Time with transfers: 4.064503 
+Time without transfers: 4.005941 
+  393216.000  33799.067 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 16
+Time with transfers: 4.690423 
+Time without transfers: 4.631788 
+  393216.000  29290.601 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 32
+Time with transfers: 5.964517 
+Time without transfers: 5.905899 
+  393216.000  23035.844 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 64
+Time with transfers: 7.242262 
+Time without transfers: 7.183655 
+  393216.000  18975.477 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 1
+Time with transfers: 7.230243 
+Time without transfers: 7.171653 
+  393216.000  19007.015 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 2
+Time with transfers: 4.236790 
+Time without transfers: 4.178057 
+  393216.000  32434.121 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 4
+Time with transfers: 3.902348 
+Time without transfers: 3.843798 
+  393216.000  35204.150 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 8
+Time with transfers: 4.054201 
+Time without transfers: 3.995534 
+  393216.000  33897.508 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 16
+Time with transfers: 4.721090 
+Time without transfers: 4.662412 
+  393216.000  29100.842 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 32
+Time with transfers: 5.974397 
+Time without transfers: 5.915770 
+  393216.000  23002.176 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 64
+Time with transfers: 7.235969 
+Time without transfers: 7.177478 
+  393216.000  18992.319 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 1
+Time with transfers: 7.265487 
+Time without transfers: 7.206920 
+  393216.000  18914.956 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 2
+Time with transfers: 4.244778 
+Time without transfers: 4.186023 
+  393216.000  32364.907 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 4
+Time with transfers: 3.897918 
+Time without transfers: 3.839229 
+  393216.000  35253.453 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 8
+Time with transfers: 4.052507 
+Time without transfers: 3.993871 
+  393216.000  33900.208 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 16
+Time with transfers: 4.705962 
+Time without transfers: 4.647365 
+  393216.000  29203.158 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 32
+Time with transfers: 5.962836 
+Time without transfers: 5.904121 
+  393216.000  23042.267 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 64
+Time with transfers: 7.253876 
+Time without transfers: 7.195316 
+  393216.000  18945.366 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 1
+Time with transfers: 7.316493 
+Time without transfers: 7.257825 
+  393216.000  18783.141 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 2
+Time with transfers: 4.267551 
+Time without transfers: 4.208982 
+  393216.000  32191.515 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 4
+Time with transfers: 3.923991 
+Time without transfers: 3.865342 
+  393216.000  35013.569 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 8
+Time with transfers: 4.068965 
+Time without transfers: 4.010364 
+  393216.000  33765.628 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 16
+Time with transfers: 4.720193 
+Time without transfers: 4.661562 
+  393216.000  29108.983 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 32
+Time with transfers: 5.978285 
+Time without transfers: 5.919645 
+  393216.000  22983.277 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 64
+Time with transfers: 7.238737 
+Time without transfers: 7.180176 
+  393216.000  18982.926 19200 # matmult_mkn_offload
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15228627: <matmult_test> in cluster <dcc> Done
+
+Job <matmult_test> was submitted from host <n-62-12-21> by user <s183997> in cluster <dcc> at Fri Jan 20 17:15:57 2023
+Job was executed on host(s) <16*n-62-12-23>, in queue <hpcintrogpu>, as user <s183997> in cluster <dcc> at Fri Jan 20 17:19:24 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment3/02614_Assignment3_matmult_tools> was used as the working directory.
+Started at Fri Jan 20 17:19:24 2023
+Terminated at Fri Jan 20 17:30:17 2023
+Results reported at Fri Jan 20 17:30:17 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J matmult_test
+#BSUB -o matmult_test%J.out
+#BSUB -q hpcintrogpu
+#BSUB -n 16
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 60
+#BSUB -R "span[hosts=1]"
+
+module load nvhpc/22.11-nompi
+module load cuda/11.8
+module load gcc/11.3.0-binutils-2.38
+
+for method in mnk_offload mkn_offload; do
+    for team in 1024 2048 4096 8192 16384; do
+        for thread in 1 2 4 8 16 32 64; do
+            echo ""
+            echo "Testing for team size $team and thread count $thread"
+            TEAMS=$team THREADS=$thread ./matmult_c.nvc++ $method 4096 4096 4096
+        done
+    done
+done
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   646.50 sec.
+    Max Memory :                                 931 MB
+    Average Memory :                             925.29 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               130141.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   654 sec.
+    Turnaround time :                            860 sec.
+
+The output (if any) is above this job summary.
+

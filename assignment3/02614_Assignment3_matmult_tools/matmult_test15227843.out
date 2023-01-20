@@ -622,3 +622,218 @@ Time without transfers: 7.166339
   393216.000  19095.940 19200 # matmult_mkn_offload
 
 Testing for team size 1024 and thread count 32
+Time with transfers: 7.198021 
+Time without transfers: 7.167374 
+  393216.000  19092.958 19200 # matmult_mkn_offload
+
+Testing for team size 1024 and thread count 64
+Time with transfers: 7.196550 
+Time without transfers: 7.166020 
+  393216.000  19096.906 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 1
+Time with transfers: 7.198686 
+Time without transfers: 7.168092 
+  393216.000  19091.364 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 2
+Time with transfers: 7.197098 
+Time without transfers: 7.166557 
+  393216.000  19095.452 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 4
+Time with transfers: 7.198700 
+Time without transfers: 7.168147 
+  393216.000  19091.173 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 8
+Time with transfers: 7.197239 
+Time without transfers: 7.166688 
+  393216.000  19095.218 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 16
+Time with transfers: 7.198364 
+Time without transfers: 7.166424 
+  393216.000  19092.139 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 32
+Time with transfers: 7.196394 
+Time without transfers: 7.165945 
+  393216.000  19097.341 19200 # matmult_mkn_offload
+
+Testing for team size 2048 and thread count 64
+Time with transfers: 7.196775 
+Time without transfers: 7.166249 
+  393216.000  19096.518 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 1
+Time with transfers: 7.202187 
+Time without transfers: 7.167775 
+  393216.000  19082.005 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 2
+Time with transfers: 7.198851 
+Time without transfers: 7.168401 
+  393216.000  19089.649 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 4
+Time with transfers: 7.198788 
+Time without transfers: 7.167369 
+  393216.000  19089.664 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 8
+Time with transfers: 7.198073 
+Time without transfers: 7.167412 
+  393216.000  19091.892 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 16
+Time with transfers: 7.197299 
+Time without transfers: 7.166745 
+  393216.000  19093.523 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 32
+Time with transfers: 7.198382 
+Time without transfers: 7.167381 
+  393216.000  19090.980 19200 # matmult_mkn_offload
+
+Testing for team size 4096 and thread count 64
+Time with transfers: 7.197346 
+Time without transfers: 7.166773 
+  393216.000  19093.786 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 1
+Time with transfers: 7.199788 
+Time without transfers: 7.166747 
+  393216.000  19087.043 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 2
+Time with transfers: 7.198399 
+Time without transfers: 7.167494 
+  393216.000  19090.815 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 4
+Time with transfers: 7.197148 
+Time without transfers: 7.166309 
+  393216.000  19094.040 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 8
+Time with transfers: 7.199019 
+Time without transfers: 7.168294 
+  393216.000  19089.145 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 16
+Time with transfers: 7.197638 
+Time without transfers: 7.166747 
+  393216.000  19092.552 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 32
+Time with transfers: 7.198909 
+Time without transfers: 7.168077 
+  393216.000  19089.370 19200 # matmult_mkn_offload
+
+Testing for team size 8192 and thread count 64
+Time with transfers: 7.198006 
+Time without transfers: 7.167493 
+  393216.000  19091.950 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 1
+Time with transfers: 7.198484 
+Time without transfers: 7.167897 
+  393216.000  19090.550 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 2
+Time with transfers: 7.198421 
+Time without transfers: 7.167567 
+  393216.000  19090.699 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 4
+Time with transfers: 7.196680 
+Time without transfers: 7.166083 
+  393216.000  19095.391 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 8
+Time with transfers: 7.197837 
+Time without transfers: 7.167300 
+  393216.000  19092.205 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 16
+Time with transfers: 7.199653 
+Time without transfers: 7.169129 
+  393216.000  19087.276 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 32
+Time with transfers: 7.197361 
+Time without transfers: 7.166434 
+  393216.000  19093.536 19200 # matmult_mkn_offload
+
+Testing for team size 16384 and thread count 64
+Time with transfers: 7.198770 
+Time without transfers: 7.167823 
+  393216.000  19089.712 19200 # matmult_mkn_offload
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15227843: <matmult_test> in cluster <dcc> Done
+
+Job <matmult_test> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Fri Jan 20 15:18:05 2023
+Job was executed on host(s) <16*n-62-18-13>, in queue <hpcintrogpu>, as user <s183997> in cluster <dcc> at Fri Jan 20 15:53:47 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment3/02614_Assignment3_matmult_tools> was used as the working directory.
+Started at Fri Jan 20 15:53:47 2023
+Terminated at Fri Jan 20 16:03:13 2023
+Results reported at Fri Jan 20 16:03:13 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J matmult_test
+#BSUB -o matmult_test%J.out
+#BSUB -q hpcintrogpu
+#BSUB -n 16
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 60
+#BSUB -R "span[hosts=1]"
+
+module load nvhpc/22.11-nompi
+module load cuda/11.8
+module load gcc/11.3.0-binutils-2.38
+
+for method in mnk_offload mkn_offload; do
+    for team in 1024 2048 4096 8192 16384; do
+        for thread in 1 2 4 8 16 32 64; do
+            echo ""
+            echo "Testing for team size $team and thread count $thread"
+            TEAMS=$team THREADS=$thread ./matmult_c.nvc++ $method 4096 4096 4096
+        done
+    done
+done
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   559.54 sec.
+    Max Memory :                                 932 MB
+    Average Memory :                             928.67 MB
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               130140.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   576 sec.
+    Turnaround time :                            2708 sec.
+
+The output (if any) is above this job summary.
+

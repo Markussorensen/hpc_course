@@ -15,6 +15,21 @@ void matmult_mkn_offload(int M, int N, int K, double **A, double **B, double **C
     double warmup = 1.0;
     int i, k, j;
     double t1, t2, t3, t4;
+    int teams, threads;
+
+    char* teams_env = getenv("TEAMS");
+    if (teams_env != NULL) {
+        teams = atoi(teams_env);
+    } else {
+        teams = _TEAMS;
+    }
+
+    char* threads_env = getenv("THREADS");
+    if (threads_env != NULL) {
+        threads = atoi(threads_env);
+    } else {
+        threads = _THREADS;
+    }
 
 
     #pragma omp target data map(tofrom: warmup)
@@ -36,7 +51,7 @@ void matmult_mkn_offload(int M, int N, int K, double **A, double **B, double **C
     #pragma omp target data map(to: A[0:M][0:K], B[0:K][0:N]) map(from: C[0:M][0:N])
     {
         t2 = omp_get_wtime();
-        #pragma omp target teams distribute parallel for private(i, k, j) num_teams(_TEAMS) thread_limit(_THREADS)
+        #pragma omp target teams distribute parallel for private(i, k, j) num_teams(teams) thread_limit(threads)
         for (i = 0; i < M; i++) {
             for (k = 0; k < K; k++) {
                 for (j = 0; j < N; j++) {

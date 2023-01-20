@@ -142,6 +142,50 @@ for key in timings:
     print(key, np.mean(timings[key]))
     
 
+#Making team and thread performance plots
+methods = ["mnk_offload", "mkn_offload"]
+method_idx = 0
+team_performance = {}
+team_idx = 0
+teams = [1024, 2048, 4096, 8192, 16384]
+threads = [1, 2, 4, 8, 16, 32, 64]
+team_performance["mnk_offload"] = [[] for i in range(5)]
+team_performance["mkn_offload"] = [[] for i in range(5)]
 
-        
+with open("assignment3/02614_Assignment3_matmult_tools/matmult_test15228627.out") as f:
+    lines = f.readlines()
+    for line in lines:
+        #remove multiple spaces
+        line = re.sub(' +', ' ', line)
+        linearray = line.split(" ")
+        if len(linearray) > 1:
+            if method in linearray[-1]:
+                team_performance[method][idx].append(float(linearray[-4]))
+            if "Using" in linearray[0]:
+                team = int(linearray[1])
+                idx = teams.index(team)
+            if line.startswith("Testing for team size"):
+                team = int(linearray[4])
+                idx = teams.index(team)
+            if line.startswith(" 393216.000 284314.928 19200 # matmult_mnk_offload"):
+                method_idx += 1
+                method = methods[method_idx]
+                idx = 0
+            
+#For each team size plot the performance for n threads
+plt.figure()
+for i in range(len(teams)):
+    plt.plot(threads, team_performance["mnk_offload"][i], label="Team size: {}".format(teams[i]), marker="o")
+plt.legend()
+plt.xlabel("Threads")
+plt.ylabel("MFLOPS/s")
+plt.savefig("assignment3/02614_Assignment3_matmult_tools/plots/2_matmult_performance_mnk_offload.png")
+
+plt.figure()
+for i in range(len(teams)):
+    plt.plot(threads, team_performance["mkn_offload"][i], label="Team size: {}".format(teams[i]), marker="o")
+plt.legend()
+plt.xlabel("Threads")
+plt.ylabel("MFLOPS/s")
+plt.savefig("assignment3/02614_Assignment3_matmult_tools/plots/3_matmult_performance_mkn_offload.png")
 

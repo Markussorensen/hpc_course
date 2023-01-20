@@ -10,7 +10,7 @@ void matmult_mkn_omp(int M, int N, int K, double **A, double **B, double **C) {
             C[m][n] = 0.0;
             }
         }
-    #pragma omp parallel for collapse(2)
+    #pragma omp parallel for
     for (int i = 0; i < M; i++) {
         for (int k = 0; k < K; k++) {
             for (int j = 0; j < N; j++) {

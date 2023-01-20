@@ -24,7 +24,7 @@ MAX_ITERS=5000
 for method in 1 2 3 4 5; do
     echo " "
     echo "Testing for $method method"
-    for size in 50 100 150 200 250 300 400 500; do
+    for size in 50 100 150 200 250 300; do
         echo "Size: $size"
         OMP_NUM_THREADS=16
         ./poisson $size $MAX_ITERS 0.000001 0.0 $method 

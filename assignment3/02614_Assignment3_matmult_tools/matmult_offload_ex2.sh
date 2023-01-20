@@ -19,14 +19,12 @@ module load nvhpc/22.11-nompi
 module load cuda/11.8
 module load gcc/11.3.0-binutils-2.38
 
-MAX_ITERS=5000
-
-for method in 1 2 3 4 5; do
-    echo " "
-    echo "Testing for $method method"
-    for size in 50 100 150 200 250 300 400 500; do
-        echo "Size: $size"
-        OMP_NUM_THREADS=16
-        ./poisson $size $MAX_ITERS 0.000001 0.0 $method 
+for method in mnk_offload mkn_offload; do
+    for team in 1024 2048 4096 8192 16384; do
+        for thread in 1 2 4 8 16 32 64; do
+            echo ""
+            echo "Testing for team size $team and thread count $thread"
+            TEAMS=$team THREADS=$thread ./matmult_c.nvc++ $method 4096 4096 4096
+        done
     done
 done

@@ -19,14 +19,12 @@ module load nvhpc/22.11-nompi
 module load cuda/11.8
 module load gcc/11.3.0-binutils-2.38
 
-MAX_ITERS=5000
+methods = "asy_offload blk_offload lib_offload mkn_offload mnk_offload"
 
-for method in 1 2 3 4 5; do
+for method in asy_offload blk_offload lib_offload mkn_offload mnk_offload; do
     echo " "
     echo "Testing for $method method"
-    for size in 50 100 150 200 250 300 400 500; do
-        echo "Size: $size"
-        OMP_NUM_THREADS=16
-        ./poisson $size $MAX_ITERS 0.000001 0.0 $method 
+    for size in 256 512 1024 2048 4096 8192; do
+        OMP_NUM_THREADS=16 ./matmult_c.nvc++ $method $size $size $size 
     done
 done

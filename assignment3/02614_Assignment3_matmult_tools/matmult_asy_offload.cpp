@@ -4,14 +4,24 @@
 #include <math.h>
 #include "matmult_asy_offload.h"
 
+#ifndef _TEAMS
+#define _TEAMS 256
+#endif
+
+#ifndef _THREADS
+#define _THREADS 32
+#endif
+
 void matmult_asy_offload(int M, int N, int K, double **A, double **B, double **C) {
     double warmup = 1.0;
     const int num_slabs = 16;
+    double t1, t2, t3, t4;
 
     #pragma omp target data map(tofrom: warmup)
     {
         warmup = warmup + 1.0;
     }
+    t1 = omp_get_wtime();
     #pragma omp target enter data map(alloc: A[0:M][0:K], B[0:K][0:N], C[0:K][0:N])
     #pragma omp target update to(B[0:K][0:N])
     #pragma omp target teams distribute parallel for
@@ -28,7 +38,7 @@ void matmult_asy_offload(int M, int N, int K, double **A, double **B, double **C
         int m_start = slab * slab_size;
         int m_end = m_start + slab_size;
         #pragma omp target update to(A[m_start:slab_size][0:K]) depend(out: A) nowait
-        #pragma omp target teams distribute parallel for collapse(2) nowait depend(in: A) depend(out: C)
+        #pragma omp target teams distribute parallel for collapse(2) nowait depend(in: A) depend(out: C) num_teams(_TEAMS) thread_limit(_THREADS)
         for (int m = m_start; m < m_end; m++) {
             for (int n = 0; n < N; n++) {
                 for (int k = 0; k < K; k++) {
@@ -40,6 +50,9 @@ void matmult_asy_offload(int M, int N, int K, double **A, double **B, double **C
     }
     #pragma omp taskwait
     #pragma omp target exit data map(delete: A, B, C)
+
+    t2 = omp_get_wtime();
+    printf("Time: %f  \n", t2 - t1);
 }
 
 

@@ -242,4 +242,12 @@ plt.ylabel("Speedup")
 plt.legend()
 plt.savefig("assignment3/02614_Assignment3_poisson_tools/plots/speedup_map_norm.png")
 
+#Speedup for map norm compared to jacobi_omp
+plt.figure()
+plt.plot(sizes, times[1, :]/times[4, :], label="Speedup", marker="o")
+plt.xlabel("Matrix size")
+plt.ylabel("Speedup")
+plt.legend()
+plt.savefig("assignment3/02614_Assignment3_poisson_tools/plots/speedup_map_norm_jacobi.png")
+
 

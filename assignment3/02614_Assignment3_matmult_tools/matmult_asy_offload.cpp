@@ -6,7 +6,7 @@
 
 void matmult_asy_offload(int M, int N, int K, double **A, double **B, double **C) {
     double warmup = 1.0;
-    const int num_slabs = 10;
+    const int num_slabs = 16;
 
     #pragma omp target data map(tofrom: warmup)
     {

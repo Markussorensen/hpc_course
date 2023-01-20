@@ -4,8 +4,9 @@ OBJS	= main.o \
         jacobi_map.o \
         jacobi_target.o \
         jacobi_omp.o \
-        init.o \
-        input.o \
+        jacobi_map_norm.o \
+        jacobi_dual.o \
+        utils.o \
         print.o \
         alloc3d.o \
 

@@ -3,7 +3,9 @@
 #include <stdlib.h>
 #include "matmult_blk.h"
 
-void matmult_blk(int M,int N,int K,double **A,double **B,double **C, int bs) {
+void matmult_blk(int M,int N,int K,double **A,double **B,double **C) {
+    const int bs = 64;
+
     for (int m = 0; m < M; m++) {
         for (int n = 0; n < N; n++) {
             C[m][n] = 0.0;

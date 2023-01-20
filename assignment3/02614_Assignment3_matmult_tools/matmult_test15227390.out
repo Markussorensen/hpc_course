@@ -1,0 +1,26 @@
+Loaded module: cuda/11.8
+Loaded module: gcc/11.3.0-binutils-2.38
+/zhome/69/1/137385/.lsbatch/1674220451.15227390.shell: line 22: methods: command not found
+/zhome/69/1/137385/.lsbatch/1674220451.15227390.shell: line 23: omp_methods: command not found
+ 
+Testing for asy_offload method
+    1536.000  65370.033 0 # matmult_asy_offload
+    6144.000 234540.893 0 # matmult_asy_offload
+   24576.000 397795.795 0 # matmult_asy_offload
+   98304.000 392586.005 2.24997e+15 # matmult_asy_offload
+  393216.000 329646.425 19200 # matmult_asy_offload
+ 1572864.000 322019.084 1.2288e+06 # matmult_asy_offload
+ 
+Testing for blk_offload method
+    1536.000  21394.517 0 # matmult_blk_offload
+    6144.000  81901.203 0 # matmult_blk_offload
+   24576.000 245290.015 0 # matmult_blk_offload
+   98304.000 169623.118 300 # matmult_blk_offload
+  393216.000 177779.976 19200 # matmult_blk_offload
+ 1572864.000 181547.338 1.2288e+06 # matmult_blk_offload
+ 
+Testing for blk method
+    1536.000   9806.131 0 # matmult_blk 30
+    6144.000   9349.105 0 # matmult_blk 30
+   24576.000   8232.952 0 # matmult_blk 30
+   98304.000   8320.538 300 # matmult_blk 30

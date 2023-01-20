@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include "matmult_blk_omp.h"
 
-void matmult_blk_omp(int M,int N,int K,double **A,double **B,double **C, int bs) {
-    
+void matmult_blk_omp(int M,int N,int K,double **A,double **B,double **C) {
+    const int bs = 64;
+
     #pragma omp parallel for
     for (int m = 0; m < M; m++) {
         for (int n = 0; n < N; n++) {

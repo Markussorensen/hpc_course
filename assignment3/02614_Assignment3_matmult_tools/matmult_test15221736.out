@@ -1,0 +1,107 @@
+Loaded module: cuda/11.8
+Loaded module: gcc/11.3.0-binutils-2.38
+/zhome/69/1/137385/.lsbatch/1674210408.15221736.shell: line 22: methods: command not found
+/zhome/69/1/137385/.lsbatch/1674210408.15221736.shell: line 23: omp_methods: command not found
+ 
+Testing for methods method
+Unknown version: methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+ 
+Testing for omp_methods method
+Unknown version: omp_methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: omp_methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: omp_methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: omp_methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: omp_methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+Unknown version: omp_methods!
+Use one of: mnk mkn kmn knm nkm nmk nat lib blk per mkn_omp blk_omp mkn_offload mnk_offload blk_offload asy_offload lib_offload exp_offload
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@hpc.dtu.dk>
+Subject: Job 15221736: <matmult_test> in cluster <dcc> Exited
+
+Job <matmult_test> was submitted from host <gbarlogin2> by user <s183997> in cluster <dcc> at Fri Jan 20 11:26:48 2023
+Job was executed on host(s) <16*n-62-18-13>, in queue <hpcintrogpu>, as user <s183997> in cluster <dcc> at Fri Jan 20 11:26:49 2023
+</zhome/69/1/137385> was used as the home directory.
+</zhome/69/1/137385/Desktop/hpc_course/assignment3/02614_Assignment3_matmult_tools> was used as the working directory.
+Started at Fri Jan 20 11:26:49 2023
+Terminated at Fri Jan 20 11:26:55 2023
+Results reported at Fri Jan 20 11:26:55 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+# 02614 - High-Performance Computing, January 2022
+# 
+# batch script to run matmult on a decidated server in the hpcintro
+# queue
+#
+# Author: Bernd Dammann <bd@cc.dtu.dk>
+#
+#BSUB -J matmult_test
+#BSUB -o matmult_test%J.out
+#BSUB -q hpcintrogpu
+#BSUB -n 16
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 60
+#BSUB -R "span[hosts=1]"
+
+module load nvhpc/22.11-nompi
+module load cuda/11.8
+module load gcc/11.3.0-binutils-2.38
+
+methods = "asy_offload blk_offload blk lib_offload lib mkn_offload mkn mnk_offload"
+omp_methods = "blk_omp mkn_omp"
+
+for method in methods; do
+    echo " "
+    echo "Testing for $method method"
+    for size in 256 512 1024 2048 4096 8192; do
+        ./matmult_c.nvc++ $method $size $size $size 
+    done
+done
+
+for method in omp_methods; do
+    echo " "
+    echo "Testing for $method method"
+    for size in 256 512 1024 2048 4096 8192; do
+        OMP_NUM_THREADS=16 ./matmult_c.nvc++ $method $size $size $size 
+    done
+done
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.70 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     131072.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   8 sec.
+    Turnaround time :                            7 sec.
+
+The output (if any) is above this job summary.
+

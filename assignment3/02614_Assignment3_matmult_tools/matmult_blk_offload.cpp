@@ -6,7 +6,7 @@
 
 void matmult_blk_offload(int M, int N, int K, double **A, double **B, double **C) {
     double warmup = 1.0;
-    const int bs = 50;
+    const int bs = 64;
     // double sum[bs] = {0.0};
     #pragma omp target data map(tofrom: warmup)
     {

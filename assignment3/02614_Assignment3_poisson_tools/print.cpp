@@ -1,6 +1,9 @@
 /* $Id: print.c,v 1.1 2019/12/12 15:03:38 gbarbd Exp gbarbd $ */
 #include <stdio.h>
 #include <inttypes.h>
+#include <stdlib.h>
+#include <string.h>
+#include "print.h"
 
 static int
 is_little_endian(void) {
@@ -37,8 +40,6 @@ print_vtk(const char *fname, int n, double ***u) {
     size_t written;
     size_t items = n * n * n;
     size_t i;
-    int b;
-    unsigned char tmp;
 
     if ( (f_ptr = fopen(fname, "w")) == NULL ) {
        perror("No output! fopen()");
